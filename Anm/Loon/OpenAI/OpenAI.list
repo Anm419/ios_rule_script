@@ -37,57 +37,8 @@ IP-ASN,20473,no-resolve
 IP-CIDR,24.199.123.28/32,no-resolve
 IP-CIDR,64.23.132.171/32,no-resolve
 
-# GROUP: Flower华云
+# GROUP: Flower花云
 # SOURCE: https://api-huacloud.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9FeHRyYS9PcGVuQUkvT3BlbkFJLmxpc3Q
-DOMAIN,anthropic.auth0.com
-DOMAIN,anthropic-com.ghost.io
-DOMAIN,anthropic.com.cdn.cloudflare.net
-DOMAIN,browser-intake-us5-datadoghq.com
-DOMAIN,cdn.usefathom.com
-DOMAIN,servd-anthropic-website.b-cdn.net
-DOMAIN-SUFFIX,anthropic.com
-DOMAIN-SUFFIX,claude.ai
-DOMAIN-SUFFIX,claude.com
-DOMAIN-SUFFIX,clau.de
-DOMAIN-SUFFIX,claudemcpclient.com
-DOMAIN-SUFFIX,claudeusercontent.com
-DOMAIN-SUFFIX,statsigapi.net
-DOMAIN-KEYWORD,datadog
-DOMAIN-KEYWORD,sift
-DOMAIN,gemini.google.com
-DOMAIN,notebook.google
-DOMAIN,notebook.google.com
-DOMAIN,autopush-cloudcode-pa.sandbox.googleapis.com
-DOMAIN,cloudcode-pa.googleapis.com
-DOMAIN,cloudaicompanion.googleapis.com
-DOMAIN,daily-cloudcode-pa.googleapis.com
-DOMAIN,daily-cloudcode-pa.sandbox.googleapis.com
-DOMAIN,discoveryengine.googleapis.com
-DOMAIN,labstailwind.pa.googleapis.com
-DOMAIN,generativelanguage.googleapis.com
-DOMAIN-KEYWORD,aiplatform.googleapis.com
-DOMAIN-SUFFIX,githubcopilot.com
-DOMAIN-SUFFIX,cursor.sh
-DOMAIN-SUFFIX,cursorapi.com
-DOMAIN-SUFFIX,jetbrains.ai
-DOMAIN-SUFFIX,ai.azure.com
-DOMAIN-SUFFIX,cognitiveservices.azure.com
-DOMAIN-SUFFIX,cognitive.microsoft.com
+# UPDATED: 2026-09-16
 DOMAIN-SUFFIX,oai.azure.com
 DOMAIN-SUFFIX,openai.azure.com
-DOMAIN-SUFFIX,openrouter.ai
-DOMAIN-SUFFIX,perplexity.ai
-DOMAIN-SUFFIX,x.ai
-DOMAIN,labs.google
-DOMAIN-SUFFIX,aisandbox-pa.googleapis.com
-DOMAIN-SUFFIX,notebooklm.google.com
-IP-CIDR,160.79.104.0/21,no-resolve
-IP-CIDR6,2607:6BC0::/32,no-resolve
-DOMAIN-SUFFIX,apple-ready.fastly-edge.com
-DOMAIN-SUFFIX,apple-relay.apple.com
-DOMAIN-SUFFIX,apple-relay.cloudflare.com
-DOMAIN-SUFFIX,cp4.cloudflare.com
-DOMAIN-SUFFIX,gateway.icloud.com
-DOMAIN-SUFFIX,guzzoni.apple.com
-DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
-DOMAIN-SUFFIX,smoot.apple.com
