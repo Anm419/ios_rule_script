@@ -1,74 +1,66 @@
 ## China
 
 - 将 `rule/Loon/China/China_Domain.list` 转换后写入 `Anm/Loon/rule/Inner/China/China_All.list`（以 `.` 开头的域名去掉首个点并添加 `DOMAIN-SUFFIX,`，其余域名添加 `DOMAIN,`）。
-- 将 `rule/Loon/China/China_Resolve.list` 去重合并到 `Anm/Loon/rule/Inner/China/China_All.list`。
-
-  ```text
-  DOMAIN-SUFFIX,cn
-  DOMAIN-SUFFIX,ms
-  DOMAIN-KEYWORD,.tmall.com
-  DOMAIN-KEYWORD,alicdn
-  DOMAIN-KEYWORD,alipay
-  DOMAIN-KEYWORD,aliyun
-  DOMAIN-KEYWORD,baidu
-  DOMAIN-KEYWORD,beplay
-  DOMAIN-KEYWORD,microsoft
-  DOMAIN-KEYWORD,officecdn
-  DOMAIN-KEYWORD,taobao
-  USER-AGENT,%E4%B8%AD%E5%9B%BD%E5%B7%A5%E5%95%86%E9%93%B6%E8%A1%8C*
-  USER-AGENT,%E4%BA%AC%E4%B8%9C%E5%88%B0%E5%AE%B6*
-  USER-AGENT,%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1*
-  USER-AGENT,%E4%BC%98%E9%85%B7*
-  USER-AGENT,%E5%8D%B3%E5%88%BB*
-  USER-AGENT,%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90*
-  USER-AGENT,*Vainglory*
-  USER-AGENT,AdBlock*
-  USER-AGENT,Best%20Trace*
-  USER-AGENT,MegaWerewolf*
-  USER-AGENT,MicroMessenger%20Client
-  USER-AGENT,MicroMessenger*
-  USER-AGENT,MicroMessengerClient*
-  USER-AGENT,Microsoft*
-  USER-AGENT,Moke*
-  USER-AGENT,NeteaseMusic*
-  USER-AGENT,QQ*
-  USER-AGENT,RemotePlay*
-  USER-AGENT,TIM*
-  USER-AGENT,TeamViewer*
-  USER-AGENT,WeChat*
-  USER-AGENT,WebTorrent*
-  USER-AGENT,YYeTs*
-  USER-AGENT,arrowio*
-  USER-AGENT,balls*
-  USER-AGENT,cmb*
-  USER-AGENT,cmblife*
-  USER-AGENT,eusoft_ting_en_iphone
-  USER-AGENT,hearthstone*
-  USER-AGENT,hide*
-  USER-AGENT,ting_en
-  IP-CIDR,1.255.62.0/24
-  IP-CIDR,101.32.104.0/21
-  IP-CIDR,101.32.118.0/23
-  IP-CIDR,101.32.96.0/20
-  IP-CIDR,119.28.28.28/32
-  IP-CIDR,120.195.181.180/32
-  IP-CIDR,129.226.0.0/16
-  IP-CIDR,182.254.116.0/24
-  IP-CIDR,183.128.0.0/11
-  IP-CIDR,183.131.48.0/20
-  IP-CIDR,185.188.32.0/22
-  IP-CIDR,185.188.32.0/24
-  IP-CIDR,185.188.33.0/24
-  IP-CIDR,185.188.34.0/24
-  IP-CIDR,185.188.35.0/24
-  IP-CIDR,203.205.238.0/23
-  IP-CIDR,203.205.254.0/23
-  IP-CIDR6,2a0b:b580::/48
-  IP-CIDR6,2a0b:b581::/48
-  IP-CIDR6,2a0b:b582::/48
-  IP-CIDR6,2a0b:b583::/48
-  ```
+- 将 `rule/Loon/China/China_Resolve.list` 内容合并到 `Anm/Loon/rule/Inner/China/China_All.list`。
 
 ## ChinaMedia
 
 - 将 `rule/Loon/ChinaMedia/ChinaMedia.list` 内容复制到 `Anm/Loon/rule/Inner/ChinaMedia/ChinaMedia.list`（该来源较 Surge 少 6 条 `PROCESS-NAME` 规则）。
+
+## Apple
+
+- 将 `rule/Loon/Apple/Apple_Domain.list` 转换后写入 `Anm/Loon/rule/Out/Apple/Apple_All.list`（以 `.` 开头的域名去掉首个点并添加 `DOMAIN-SUFFIX,`，其余域名添加 `DOMAIN,`；较 Surge 缺少 13 条进程名规则，无法等价转换，按其他规则继续分流）。
+- 将 `rule/Loon/Apple/Apple_Resolve.list` 内容合并到 `Anm/Loon/rule/Out/Apple/Apple_All.list`。
+
+## Disney
+
+- 将 `rule/Loon/Disney/Disney.list` 内容复制到 `Anm/Loon/rule/Out/Disney/Disney.list`（较 Surge 缺少 2 条进程名规则，无法等价转换，按其他规则继续分流）。
+
+## GitHub
+
+- 将 `rule/Loon/GitHub/GitHub.list` 内容复制到 `Anm/Loon/rule/Out/GitHub/GitHub.list`。
+
+## GlobalMedia
+
+- 将 `rule/Loon/GlobalMedia/GlobalMedia_Domain.list` 转换后写入 `Anm/Loon/rule/Out/GlobalMedia/GlobalMedia_All.list`（以 `.` 开头的域名去掉首个点并添加 `DOMAIN-SUFFIX,`，其余域名添加 `DOMAIN,`；较 Surge 缺少 3 条进程名规则，无法等价转换，按其他规则继续分流）。
+- 将 `rule/Loon/GlobalMedia/GlobalMedia_Resolve.list` 内容合并到 `Anm/Loon/rule/Out/GlobalMedia/GlobalMedia_All.list`。
+
+## Google
+
+- 将 `rule/Loon/Google/Google.list` 内容复制到 `Anm/Loon/rule/Out/Google/Google.list`（较 Surge 缺少 5 条进程名规则，无法等价转换，按其他规则继续分流）。
+
+## Microsoft
+
+- 将 `rule/Loon/Microsoft/Microsoft.list` 内容复制到 `Anm/Loon/rule/Out/Microsoft/Microsoft.list`（较 Surge 缺少 2 条进程名规则，无法等价转换，按其他规则继续分流）。
+
+## Netflix
+
+- 将 `rule/Loon/Netflix/Netflix.list` 内容复制到 `Anm/Loon/rule/Out/Netflix/Netflix.list`（较 Surge 缺少 1 条进程名规则，无法等价转换，按其他规则继续分流）。
+
+## OpenAI
+
+- 将 `rule/Loon/OpenAI/OpenAI.list` 内容复制到 `Anm/Loon/rule/Out/OpenAI/OpenAI.list`。
+
+## Proxy
+
+- 将 `rule/Loon/Proxy/Proxy_Domain.list` 转换后写入 `Anm/Loon/rule/Out/Proxy/Proxy_All.list`（以 `.` 开头的域名去掉首个点并添加 `DOMAIN-SUFFIX,`，其余域名添加 `DOMAIN,`）。
+- 将 `rule/Loon/Proxy/Proxy_Resolve.list` 内容合并到 `Anm/Loon/rule/Out/Proxy/Proxy_All.list`。
+
+## Telegram
+
+- 将 `rule/Loon/Telegram/Telegram.list` 内容复制到 `Anm/Loon/rule/Out/Telegram/Telegram.list`（较 Surge 缺少 5 条进程名规则，无法等价转换，按其他规则继续分流；Surge 的 OR 所列 5 个 ASN 已由本来源同选项的独立 IP-ASN 规则等价覆盖）。
+
+## YouTube
+
+- 将 `rule/Loon/YouTube/YouTube.list` 内容复制到 `Anm/Loon/rule/Out/YouTube/YouTube.list`。
+
+## Bank
+
+- 将 `rule/Loon/CCB/CCB.list` 内容合并到 `Anm/Loon/rule/Inner/Bank/Bank.list`。
+- 将 `rule/Loon/CMB/CMB.list` 内容合并到 `Anm/Loon/rule/Inner/Bank/Bank.list`。
+- 将 `rule/Loon/ABC/ABC.list` 内容合并到 `Anm/Loon/rule/Inner/Bank/Bank.list`。
+- 将 `rule/Loon/BOC/BOC.list` 内容合并到 `Anm/Loon/rule/Inner/Bank/Bank.list`。
+- 将 `rule/Loon/BOCOM/BOCOM.list` 内容合并到 `Anm/Loon/rule/Inner/Bank/Bank.list`。
+- 将 `rule/Loon/CGB/CGB.list` 内容合并到 `Anm/Loon/rule/Inner/Bank/Bank.list`。
+- 将 `rule/Loon/UnionPay/UnionPay.list` 内容合并到 `Anm/Loon/rule/Inner/Bank/Bank.list`。
+- 将 `rule/Loon/ICBC/ICBC.list` 内容合并到 `Anm/Loon/rule/Inner/Bank/Bank.list`。
