@@ -2,3 +2,13 @@
 # UPDATE: 2026-09-23 01:03:32
 # REMARK: 罗汉堂域名及子域名规则，用于补充国内服务直连分流。
 DOMAIN-SUFFIX,luohanacademy.com
+
+# SOURCE: rule/Surge/DouYin/DouYin.list
+# UPDATE: 2026-09-23 01:12:43
+# REMARK: 抖音视频域名及子域名规则，用于补充国内影音服务直连分流。
+DOMAIN-SUFFIX,idouyinvod.com
+
+# SOURCE: rule/Surge/iQIYI/iQIYI.list
+# UPDATE: 2026-09-23 01:15:49
+# REMARK: 爱奇艺指定进程直连，仅 Surge Mac 支持，iOS 忽略此规则。
+PROCESS-NAME,com.qiyi.video

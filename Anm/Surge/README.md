@@ -68,3 +68,15 @@
 ```text
 DOMAIN-SUFFIX,luohanacademy.com
 ```
+
+- 将 `rule/Surge/DouYin/DouYin.list` 与 `Anm/Surge/rule/Inner/China/China_All.list` 和 `Anm/Surge/rule/Inner/ChinaMedia/ChinaMedia.list` 联合对比，将未覆盖的规则合并到 `Anm/Surge/rule/Inner/Extra/Extra.list`。
+
+```text
+DOMAIN-SUFFIX,idouyinvod.com
+```
+
+- 将 `rule/Surge/iQIYI/iQIYI.list` 与 `Anm/Surge/rule/Inner/China/China_All.list` 和 `Anm/Surge/rule/Inner/ChinaMedia/ChinaMedia.list` 联合对比，将未覆盖的规则合并到 `Anm/Surge/rule/Inner/Extra/Extra.list`（进程规则仅 Surge Mac 支持，iOS 忽略；Loon 对应来源无此规则，未找到等价转换，沿用现有规则）。
+
+```text
+PROCESS-NAME,com.qiyi.video
+```
