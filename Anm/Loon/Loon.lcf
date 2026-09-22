@@ -1,0 +1,183 @@
+[General]
+ip-mode = v4-only
+ipv6-vif = off
+allow-udp-proxy = true
+allow-wifi-access = false
+wifi-access-http-port = 6052
+wifi-access-socks5-port = 6051
+interface-mode = auto
+bypass-tun = 10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,192.0.0.0/24,192.0.2.0/24,192.88.99.0/24,192.168.0.0/16,198.51.100.0/24,203.0.113.0/24,224.0.0.0/4,255.255.255.255/32
+skip-proxy = 127.0.0.0/8, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, 162.14.0.0/16, 211.99.96.0/19, 162.159.192.0/24, 162.159.193.0/24, 162.159.195.0/24, fc00::/7, fe80::/10, localhost, *.local, ::1,captive.apple.com, passenger.t3go.cn, *.ccb.com, wxh.wo.cn, *.abcchina.com, *.abcchina.com.cn, *.crashlytics.com
+dns-server = 223.5.5.5, 119.29.29.29,114.114.114.114,system
+doh-server = https://doh.pub/dns-query,https://dns.alidns.com/dns-query,https://223.5.5.5/dns-query,https://223.6.6.6/dns-query,https://1.12.12.12/dns-query,https://120.53.53.53/dns-query
+doq-server = quic://223.6.6.6:853,quic://223.5.5.5:853
+hijack-dns = 8.8.8.8:53, 8.8.4.4:53
+real-ip = localhost, *.local, captive.apple.com, *.apple.com, *.icloud.com, *.push.apple.com, mask.icloud.com, mask-h2.icloud.com, mask-api.icloud.com, *.orb.local, *.msftncsi.com, *.msftconnecttest.com, *.srv.nintendo.net, *.stun.playstation.net, xbox.*.microsoft.com, *.xboxlive.com, *.battlenet.com.cn, *.battlenet.com, *.blzstatic.cn, *.battle.net, *.turn.twilio.com, *.stun.twilio.com, stun.syncthing.net, stun.*, 127.*.*.*.sslip.io, 127-*-*-*.sslip.io, *.127.*.*.*.sslip.io, *-127-*-*-*.sslip.io, 127.*.*.*.nip.io, 127-*-*-*.nip.io, *.127.*.*.*.nip.io, *-127-*-*-*.nip.io
+geoip-url = https://github.com/Hackl0us/GeoIP2-CN/raw/release/Country.mmdb
+internet-test-url = http://www.baidu.com
+proxy-test-url = http://cp.cloudflare.com/generate_204
+test-timeout = 5
+udp-fallback-mode = REJECT
+disable-stun = true
+disconnect-on-policy-change = true
+sni-sniffing = true
+switch-node-after-failure-times = 3
+
+[Host]
+# 内网域名DNS交给系统
+aiguoai.com = server:system
+*.aiguoai.com = server:system
+aiguoerp.com = server:system
+*.aiguoerp.com = server:system
+xtkj99.com = server:system
+*.xtkj99.com = server:system
+
+ip6-localhost = ::1
+ip6-loopback = ::1
+doh.pub = server:119.29.29.29
+taobao.com = server:223.6.6.6
+*.taobao.com = server:223.6.6.6
+tmall.com = server:223.6.6.6
+*.tmall.com = server:223.6.6.6
+jd.com = server:119.29.29.29
+*.jd.com = server:119.28.28.28
+*.qq.com = server:119.28.28.28
+*.tencent.com = server:119.28.28.28
+*.alicdn.com = server:223.5.5.5
+aliyuncs.com = server:223.5.5.5
+*.aliyuncs.com = server:223.5.5.5
+aliyun.com = server:223.5.5.5
+*.aliyun.com = server:223.5.5.5
+weixin.com = server:119.28.28.28
+*.weixin.com = server:119.28.28.28
+bilibili.com = server:119.29.29.29
+*.bilibili.com = server:119.29.29.29
+hdslb.com = server:119.29.29.29
+163.com = server:119.29.29.29
+*.163.com = server:119.29.29.29
+126.com = server:119.29.29.29
+*.126.com = server:119.29.29.29
+*.126.net = server:119.29.29.29
+*.127.net = server:119.29.29.29
+*.netease.com = server:119.29.29.29
+mi.com = server:119.29.29.29
+*.mi.com = server:119.29.29.29
+xiaomi.com = server:119.29.29.29
+*.xiaomi.com = server:119.29.29.29
+routerlogin.net = server:system
+_hotspot_.m2m = server:system
+router.asus.com = server:system
+hotspot.cslwifi.com = server:system
+amplifi.lan = server:system
+*.lan = server:system
+2ad30bj6-fc51.aws-agent.com = 59415bj8-09x2.apt-agent.dev
+6ed68gz8-2ad3.aws-agent.com = 50196gz8-f6k7.apt-agent.dev
+fc513sh2-6ed6.aws-agent.com = 21492sh1-b2d1.apt-agent.dev
+*testflight.apple.com = server:8.8.4.4
+dl.google.com = server:119.29.29.29
+dl.l.google.com = server:119.29.29.29
+mtalk.google.com = 108.177.125.188
+
+[Proxy]
+
+
+
+
+[Remote Proxy]
+花云 = 订阅地址,udp=true,block-quic=true,fast-open=default,vmess-aead=default,skip-cert-verify=true,enabled=true,flexible-sni=false
+一元 = 订阅地址,udp=true,block-quic=true,fast-open=default,vmess-aead=default,skip-cert-verify=true,enabled=true,flexible-sni=false
+
+
+
+[Remote Filter]
+香港节点筛选 = NameRegex,花云,一元, FilterKey = "(🇭🇰)|(香港)|(Hong)|(HK)"
+新加坡节点筛选 = NameRegex,花云,一元, FilterKey = "(🇸🇬)|(新加坡)|(Singapore)|(SG)"
+美国节点筛选 = NameRegex,花云,一元, FilterKey = "(🇺🇸)|(美国)|(States)|(US)"
+日本节点筛选 = NameRegex,花云,一元, FilterKey = "(🇯🇵)|(日本)|(Japan)|(JP)"
+台湾节点筛选 = NameRegex,花云,一元, FilterKey = "(🇨🇳)|(台湾)|(Tai)|(TW)"
+韩国节点筛选 = NameRegex,花云,一元, FilterKey = "(🇰🇷)|(韩国)|(韓國)|(Korea)|(KR)"
+加拿大节点筛选 = NameRegex,花云,一元, FilterKey = "(🇨🇦)|(加拿大)|(Canada)|(CA)"
+荷兰节点筛选 = NameRegex,花云,一元, FilterKey = "(🇳🇱)|(荷兰)|(荷蘭)|(Netherlands)|(Holland)|(NL)"
+德国节点筛选 = NameRegex,花云,一元, FilterKey = "(🇩🇪)|(德国)|(德國)|(Germany)|(DE)"
+英国节点筛选 = NameRegex,花云,一元, FilterKey = "(🇬🇧)|(英国)|(英國)|(United Kingdom)|(Britain)|(UK)"
+法国节点筛选 = NameRegex,花云,一元, FilterKey = "(🇫🇷)|(法国)|(法國)|(France)|(FR)"
+其他节点筛选 = NameRegex,花云,一元, FilterKey = "^(?!.*((GB)|(Expire)|(🇭🇰)|(香港)|(Hong)|(HK)|(🇯🇵)|(日本)|(Japan)|(JP)|(🇸🇬)|(新加坡)|(Singapore)|(SG)|(🇺🇸)|(美国)|(States)|(US)|(🇨🇳)|(台湾)|(Tai)|(TW)|(🇰🇷)|(韩国)|(韓國)|(Korea)|(KR)|(🇩🇪)|(德国)|(德國)|(Germany)|(DE)|(🇬🇧)|(英国)|(英國)|(United Kingdom)|(Britain)|(UK)|(🇳🇱)|(荷兰)|(荷蘭)|(Netherlands)|(Holland)|(NL)|(🇫🇷)|(法国)|(法國)|(France)|(FR)|(🇨🇦)|(加拿大)|(Canada)|(CA))).*$"
+
+[Proxy Group]
+节点选择 = select, 🇭🇰 香港节点, 🇺🇲 美国节点, 🇸🇬 新加坡节点, 🇯🇵 日本节点, 🇨🇳 台湾节点, 🇰🇷 韩国节点, 🇩🇪 德国节点, 🇬🇧 英国节点, 🇳🇱 荷兰节点, 🇫🇷 法国节点, 🇨🇦 加拿大节点, 🌐 其他节点, 花云, 一元, img-url=https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Conf/icon/Surge.png
+兜底策略 = select,  DIRECT, 节点选择, 🇭🇰 香港节点, 🇺🇲 美国节点, 🇸🇬 新加坡节点, 🇯🇵 日本节点, 🇨🇳 台湾节点, 🇰🇷 韩国节点, 🇩🇪 德国节点, 🇬🇧 英国节点, 🇳🇱 荷兰节点, 🇫🇷 法国节点, 🇨🇦 加拿大节点, 🌐 其他节点, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Cloudflare.png
+苹果服务 = select,  DIRECT, 节点选择, 🇭🇰 香港节点, 🇺🇲 美国节点, 🇸🇬 新加坡节点, 🇯🇵 日本节点, 🇨🇳 台湾节点, 🇰🇷 韩国节点, 🇩🇪 德国节点, 🇬🇧 英国节点, 🇳🇱 荷兰节点, 🇫🇷 法国节点, 🇨🇦 加拿大节点, 🌐 其他节点, img-url=https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Conf/icon/Apple_Arcade.png
+微软服务 = select,  DIRECT, 节点选择, 🇭🇰 香港节点, 🇺🇲 美国节点, 🇸🇬 新加坡节点, 🇯🇵 日本节点, 🇨🇳 台湾节点, 🇰🇷 韩国节点, 🇩🇪 德国节点, 🇬🇧 英国节点, 🇳🇱 荷兰节点, 🇫🇷 法国节点, 🇨🇦 加拿大节点, 🌐 其他节点, img-url=https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Conf/icon/Windows.png
+人工智能 = select,  节点选择, 🇭🇰 香港节点, 🇺🇲 美国节点, 🇸🇬 新加坡节点, 🇯🇵 日本节点, 🇨🇳 台湾节点, 🇰🇷 韩国节点, 🇩🇪 德国节点, 🇬🇧 英国节点, 🇳🇱 荷兰节点, 🇫🇷 法国节点, 🇨🇦 加拿大节点, 🌐 其他节点, img-url=https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Conf/icon/ChatGPT.png
+谷歌服务 = select,  DIRECT, 节点选择, 🇭🇰 香港节点, 🇺🇲 美国节点, 🇸🇬 新加坡节点, 🇯🇵 日本节点, 🇨🇳 台湾节点, 🇰🇷 韩国节点, 🇩🇪 德国节点, 🇬🇧 英国节点, 🇳🇱 荷兰节点, 🇫🇷 法国节点, 🇨🇦 加拿大节点, 🌐 其他节点, img-url=https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Conf/icon/Google.png
+电报信息 = select,  DIRECT, 节点选择, 🇭🇰 香港节点, 🇺🇲 美国节点, 🇸🇬 新加坡节点, 🇯🇵 日本节点, 🇨🇳 台湾节点, 🇰🇷 韩国节点, 🇩🇪 德国节点, 🇬🇧 英国节点, 🇳🇱 荷兰节点, 🇫🇷 法国节点, 🇨🇦 加拿大节点, 🌐 其他节点, img-url=https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Conf/icon/Telegram.png
+Paypal = select,  DIRECT, 节点选择, 🇭🇰 香港节点, 🇺🇲 美国节点, 🇸🇬 新加坡节点, 🇯🇵 日本节点, 🇨🇳 台湾节点, 🇰🇷 韩国节点, 🇩🇪 德国节点, 🇬🇧 英国节点, 🇳🇱 荷兰节点, 🇫🇷 法国节点, 🇨🇦 加拿大节点, 🌐 其他节点, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/PayPal.png
+油管视频 = select,  DIRECT, 节点选择, 🇭🇰 香港节点, 🇺🇲 美国节点, 🇸🇬 新加坡节点, 🇯🇵 日本节点, 🇨🇳 台湾节点, 🇰🇷 韩国节点, 🇩🇪 德国节点, 🇬🇧 英国节点, 🇳🇱 荷兰节点, 🇫🇷 法国节点, 🇨🇦 加拿大节点, 🌐 其他节点, img-url=https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Conf/icon/YouTube.png
+奈飞视频 = select,  DIRECT, 节点选择, 🇭🇰 香港节点, 🇺🇲 美国节点, 🇸🇬 新加坡节点, 🇯🇵 日本节点, 🇨🇳 台湾节点, 🇰🇷 韩国节点, 🇩🇪 德国节点, 🇬🇧 英国节点, 🇳🇱 荷兰节点, 🇫🇷 法国节点, 🇨🇦 加拿大节点, 🌐 其他节点, img-url=https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Conf/icon/Netflix.png
+迪士尼+ = select,  DIRECT, 节点选择, 🇭🇰 香港节点, 🇺🇲 美国节点, 🇸🇬 新加坡节点, 🇯🇵 日本节点, 🇨🇳 台湾节点, 🇰🇷 韩国节点, 🇩🇪 德国节点, 🇬🇧 英国节点, 🇳🇱 荷兰节点, 🇫🇷 法国节点, 🇨🇦 加拿大节点, 🌐 其他节点, img-url=https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Conf/icon/Disney.png
+国外代理 = select,  DIRECT, 节点选择, 🇭🇰 香港节点, 🇺🇲 美国节点, 🇸🇬 新加坡节点, 🇯🇵 日本节点, 🇨🇳 台湾节点, 🇰🇷 韩国节点, 🇩🇪 德国节点, 🇬🇧 英国节点, 🇳🇱 荷兰节点, 🇫🇷 法国节点, 🇨🇦 加拿大节点, 🌐 其他节点, img-url=https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Conf/icon/GlobalMedia.png
+
+🇭🇰 香港节点 = select,香港节点筛选
+🇸🇬 新加坡节点 = select,新加坡节点筛选
+🇺🇲 美国节点 = select,美国节点筛选
+🇯🇵 日本节点 = url-test,日本节点筛选,interval=600,tolerance=50
+🇨🇳 台湾节点 = url-test,台湾节点筛选,interval=600,tolerance=50
+🇰🇷 韩国节点 = url-test,韩国节点筛选,interval=600,tolerance=50
+🇨🇦 加拿大节点 = url-test,加拿大节点筛选,interval=600,tolerance=50
+🇳🇱 荷兰节点 = url-test,荷兰节点筛选,interval=600,tolerance=50
+🇩🇪 德国节点 = url-test,德国节点筛选,interval=600,tolerance=50
+🇬🇧 英国节点 = url-test,英国节点筛选,interval=600,tolerance=50
+🇫🇷 法国节点 = url-test,法国节点筛选,interval=600,tolerance=50
+🌐 其他节点 = url-test,其他节点筛选,interval=600,tolerance=50
+
+[Rule]
+# 域名规则优先匹配；未命中后再按 IP 规则与 FINAL 处理。
+GEOIP,CN,DIRECT
+# 保持 Surge 的最终出口：节点选择。
+FINAL,节点选择
+
+[Remote Rule]
+# 个人规则：与 Anm/Surge 的 Inner / Out 分类和订阅顺序对应。
+#https://raw.githubusercontent.com/Anm419/proxy_config/main/Loon/rule/Inner/Lan/Lan.list,policy=DIRECT,tag=Lan,enabled=true
+
+
+[Rewrite]
+^https?://(www\.)?(g|google)\.cn 307 https://www.google.com
+
+[Remote Rewrite]
+
+
+
+[Script]
+enable=true
+
+
+
+[Remote Script]
+
+
+
+[Plugin]
+https://github.com/fmz200/wool_scripts/raw/main/Loon/plugin/blockAds.plugin, tag=奶思去广告, enabled=true
+https://kelee.one/Tool/Loon/Lpx/YouKu_Video_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/VideoGo_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/FleaMarket_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Weixin_Official_Accounts_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/NeteaseCloudMusic_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/MailMaster_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/PinDuoDuo_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/JDWaimai_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/JD_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/MrHema_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Damai_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Bilibili_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/BaiduNetDisk_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/YouTube_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/AppleWeatherEnhancer.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/BlockAdvertisers.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Block_HTTPDNS.lpx, enabled=true
+
+
+
+[MITM]
+
