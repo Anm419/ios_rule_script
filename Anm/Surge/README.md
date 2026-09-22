@@ -60,3 +60,11 @@
 - 将 `rule/Surge/CGB/CGB.list` 内容合并到 `Anm/Surge/rule/Inner/Bank/Bank.list`。
 - 将 `rule/Surge/UnionPay/UnionPay.list` 内容合并到 `Anm/Surge/rule/Inner/Bank/Bank.list`。
 - 将 `rule/Surge/ICBC/ICBC.list` 内容合并到 `Anm/Surge/rule/Inner/Bank/Bank.list`。
+
+## Extra
+
+- 将 `rule/Surge/AliPay/AliPay.list` 与 `Anm/Surge/rule/Inner/China/China_All.list` 和 `Anm/Surge/rule/Inner/ChinaMedia/ChinaMedia.list` 联合对比，将未覆盖的规则合并到 `Anm/Surge/rule/Inner/Extra/Extra.list`。
+
+```text
+DOMAIN-SUFFIX,luohanacademy.com
+```
