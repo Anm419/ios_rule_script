@@ -2,10 +2,7 @@
 
 - 将 `rule/Loon/China/China_Domain.list` 转换后写入 `Anm/Loon/rule/Inner/China/China_All.list`（以 `.` 开头的域名去掉首个点并添加 `DOMAIN-SUFFIX,`，其余域名添加 `DOMAIN,`）。
 - 将 `rule/Loon/China/China_Resolve.list` 内容合并到 `Anm/Loon/rule/Inner/China/China_All.list`。
-
-## ChinaMedia
-
-- 将 `rule/Loon/ChinaMedia/ChinaMedia.list` 内容复制到 `Anm/Loon/rule/Inner/ChinaMedia/ChinaMedia.list`（该来源较 Surge 少 6 条 `PROCESS-NAME` 规则）。
+- 将 `rule/Loon/ChinaMedia/ChinaMedia.list` 内容合并到 `Anm/Loon/rule/Inner/China/China_All.list`（该来源较 Surge 少 6 条 `PROCESS-NAME` 规则）。
 
 ## Apple
 
@@ -67,13 +64,13 @@
 
 ## Synthesis
 
-- 将 `rule/Loon/AliPay/AliPay.list` 与 `Anm/Loon/rule/Inner/China/China_All.list` 和 `Anm/Loon/rule/Inner/ChinaMedia/ChinaMedia.list` 联合对比，将未覆盖的规则合并到 `Anm/Loon/rule/Inner/Synthesis/Synthesis.list`。
+- 将 `rule/Loon/AliPay/AliPay.list` 与 `Anm/Loon/rule/Inner/China/China_All.list` 对比，将未覆盖的规则合并到 `Anm/Loon/rule/Inner/Synthesis/Synthesis.list`。
 
 ```text
 DOMAIN-SUFFIX,luohanacademy.com
 ```
 
-- 将 `rule/Loon/DouYin/DouYin.list` 与 `Anm/Loon/rule/Inner/China/China_All.list` 和 `Anm/Loon/rule/Inner/ChinaMedia/ChinaMedia.list` 联合对比，将未覆盖的规则合并到 `Anm/Loon/rule/Inner/Synthesis/Synthesis.list`。
+- 将 `rule/Loon/DouYin/DouYin.list` 与 `Anm/Loon/rule/Inner/China/China_All.list` 对比，将未覆盖的规则合并到 `Anm/Loon/rule/Inner/Synthesis/Synthesis.list`。
 
 ```text
 DOMAIN-SUFFIX,idouyinvod.com

@@ -173,14 +173,11 @@ https://raw.githubusercontent.com/Anm419/proxy_config/main/Loon/rule/Out/Google/
 # > Telegram 通讯服务
 https://raw.githubusercontent.com/Anm419/proxy_config/main/Loon/rule/Out/Telegram/Telegram.list,policy=电报信息,tag=Telegram,enabled=true
 
-# > 国内影音及音乐服务直连
-https://raw.githubusercontent.com/Anm419/proxy_config/main/Loon/rule/Inner/ChinaMedia/ChinaMedia.list,policy=DIRECT,tag=ChinaMedia,enabled=true
+# > 国内网站、影音及音乐服务直连
+https://raw.githubusercontent.com/Anm419/proxy_config/main/Loon/rule/Inner/China/China_All.list,policy=DIRECT,tag=China,enabled=true
 
 # > 国外影音、直播及音乐服务
 https://raw.githubusercontent.com/Anm419/proxy_config/main/Loon/rule/Out/GlobalMedia/GlobalMedia_All.list,policy=国外代理,tag=GlobalMedia,enabled=true
-
-# > 国内网站及相关服务直连
-https://raw.githubusercontent.com/Anm419/proxy_config/main/Loon/rule/Inner/China/China_All.list,policy=DIRECT,tag=China,enabled=true
 
 # > 国外网站及通用代理服务
 https://raw.githubusercontent.com/Anm419/proxy_config/main/Loon/rule/Out/Proxy/Proxy_All.list,policy=节点选择,tag=Proxy,enabled=true
