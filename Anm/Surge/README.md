@@ -44,10 +44,6 @@ DOMAIN-SUFFIX,synergypeak.org,DIRECT
 
 - 将 `rule/Surge/GlobalMedia/GlobalMedia_All.list` 与 `Anm/Surge/rule/Out/Global/Global_All.list`（先导入 Global 来源，排除 `rule/Surge/GlobalMedia/` 来源的规则组）对比，将未覆盖的规则合并到 `Anm/Surge/rule/Out/Global/Global_All.list`。
 
-## GlobalMedia
-
-- 将 `rule/Surge/GlobalMedia/GlobalMedia_All.list` 内容复制到 `Anm/Surge/rule/Out/GlobalMedia/GlobalMedia_All.list`。
-
 ## Google
 
 - 将 `rule/Surge/Google/Google.list` 内容复制到 `Anm/Surge/rule/Out/Google/Google.list`。
