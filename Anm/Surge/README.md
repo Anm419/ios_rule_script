@@ -83,3 +83,51 @@ PROCESS-NAME,com.qiyi.video
 ```
 
 - 将 `rule/Surge/Alibaba/Alibaba_All.list` 与 `Anm/Surge/rule/Inner/China/China_All.list` 和 `Anm/Surge/rule/Inner/Synthesis/Synthesis.list`（排除 `rule/Surge/Alibaba/` 来源的规则组）联合对比，将未覆盖的规则合并到 `Anm/Surge/rule/Inner/Synthesis/Synthesis.list`（进程规则仅 Surge Mac 支持，iOS 忽略；Loon 对应来源无此规则且无等价转换，其他请求按现有规则分流）。
+
+- 将 `rule/Surge/Download/Download.list` 与 `Anm/Surge/rule/Inner/China/China_All.list` 对比，将未覆盖的规则合并到 `Anm/Surge/rule/Inner/Synthesis/Synthesis.list`（进程规则仅 Surge Mac 支持，iOS 忽略；Loon 对应来源缺少 13 条进程规则，无等价转换，其他请求按现有规则分流；HTTPS URL 匹配需 MITM）。
+
+```text
+DOMAIN-SUFFIX,qbittorrent.org
+DOMAIN-KEYWORD,aria2
+DOMAIN-KEYWORD,thunder
+DOMAIN-KEYWORD,xlliveud
+DOMAIN-KEYWORD,xunlei
+DOMAIN-KEYWORD,yunpan
+URL-REGEX,assets\d+\.xboxlive\.(com|cn)
+PROCESS-NAME,BitComet
+PROCESS-NAME,DownloadService
+PROCESS-NAME,Folx
+PROCESS-NAME,NetTransport
+PROCESS-NAME,Thunder
+PROCESS-NAME,Transmission
+PROCESS-NAME,WebTorrent
+PROCESS-NAME,WebTorrentHelper
+PROCESS-NAME,Weiyun
+PROCESS-NAME,aria2c
+PROCESS-NAME,fdm
+PROCESS-NAME,qbittorrent
+PROCESS-NAME,uTorrent
+```
+
+- 将 `rule/Surge/JingDong/JingDong.list` 与 `Anm/Surge/rule/Inner/China/China_All.list` 对比，将未覆盖的规则合并到 `Anm/Surge/rule/Inner/Synthesis/Synthesis.list`。
+
+```text
+DOMAIN-SUFFIX,buyjingxi.com
+DOMAIN-SUFFIX,ibaitiao.com
+DOMAIN-SUFFIX,info-insur.com
+DOMAIN-SUFFIX,jcloudwaf.com
+DOMAIN-SUFFIX,jcloudwaftest.com
+DOMAIN-SUFFIX,jcloudwaftest.net
+DOMAIN-SUFFIX,jdcontent.com
+DOMAIN-SUFFIX,jdd-global.com
+DOMAIN-SUFFIX,jddtv.com
+DOMAIN-SUFFIX,jdfeijing.com
+DOMAIN-SUFFIX,jdfinance.com
+DOMAIN-SUFFIX,jdfmgt.com
+DOMAIN-SUFFIX,jdsmartkf.com
+DOMAIN-SUFFIX,jdworldwide.com
+DOMAIN-SUFFIX,shlsyb.com
+DOMAIN-SUFFIX,wanggou.com
+DOMAIN-SUFFIX,yihaomall.com
+DOMAIN-SUFFIX,yixun.com
+```

@@ -945,3 +945,49 @@ IP-CIDR,8.128.0.0/10
 IP-CIDR,8.208.0.0/12
 IP-CIDR6,2400:b200::/32
 PROCESS-NAME,com.taobao.taobao
+
+# SOURCE: rule/Surge/Download/Download.list
+# UPDATE: 2026-09-23 12:27:03
+# REMARK: 下载工具及下载服务补充直连规则；URL 正则匹配需 HTTP 引擎可见，HTTPS 完整 URL 匹配需 MITM。进程规则仅 Surge Mac 支持，iOS 忽略。
+DOMAIN-SUFFIX,qbittorrent.org
+DOMAIN-KEYWORD,aria2
+DOMAIN-KEYWORD,thunder
+DOMAIN-KEYWORD,xlliveud
+DOMAIN-KEYWORD,xunlei
+DOMAIN-KEYWORD,yunpan
+URL-REGEX,assets\d+\.xboxlive\.(com|cn)
+PROCESS-NAME,BitComet
+PROCESS-NAME,DownloadService
+PROCESS-NAME,Folx
+PROCESS-NAME,NetTransport
+PROCESS-NAME,Thunder
+PROCESS-NAME,Transmission
+PROCESS-NAME,WebTorrent
+PROCESS-NAME,WebTorrentHelper
+PROCESS-NAME,Weiyun
+PROCESS-NAME,aria2c
+PROCESS-NAME,fdm
+PROCESS-NAME,qbittorrent
+PROCESS-NAME,uTorrent
+
+# SOURCE: rule/Surge/JingDong/JingDong.list
+# UPDATE: 2026-09-23 12:29:30
+# REMARK: 京东电商、金融及云服务补充域名规则，用于直连分流。
+DOMAIN-SUFFIX,buyjingxi.com
+DOMAIN-SUFFIX,ibaitiao.com
+DOMAIN-SUFFIX,info-insur.com
+DOMAIN-SUFFIX,jcloudwaf.com
+DOMAIN-SUFFIX,jcloudwaftest.com
+DOMAIN-SUFFIX,jcloudwaftest.net
+DOMAIN-SUFFIX,jdcontent.com
+DOMAIN-SUFFIX,jdd-global.com
+DOMAIN-SUFFIX,jddtv.com
+DOMAIN-SUFFIX,jdfeijing.com
+DOMAIN-SUFFIX,jdfinance.com
+DOMAIN-SUFFIX,jdfmgt.com
+DOMAIN-SUFFIX,jdsmartkf.com
+DOMAIN-SUFFIX,jdworldwide.com
+DOMAIN-SUFFIX,shlsyb.com
+DOMAIN-SUFFIX,wanggou.com
+DOMAIN-SUFFIX,yihaomall.com
+DOMAIN-SUFFIX,yixun.com
