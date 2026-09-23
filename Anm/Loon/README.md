@@ -10,6 +10,7 @@
 DOMAIN-SUFFIX,aiguoai.com
 DOMAIN-SUFFIX,aiguoerp.com
 DOMAIN-SUFFIX,xtkj99.com
+DOMAIN-SUFFIX,synergypeak.org,DIRECT
 ```
 
 ## Lan
