@@ -141,7 +141,7 @@ FINAL,节点选择
 #https://raw.githubusercontent.com/Anm419/proxy_config/main/Loon/rule/Inner/Lan/Lan.list,policy=DIRECT,tag=Lan,enabled=true
 
 # > 国内服务补充规则直连
-https://raw.githubusercontent.com/Anm419/proxy_config/main/Loon/rule/Inner/Extra/Extra.list,policy=DIRECT,tag=Extra,enabled=true
+https://raw.githubusercontent.com/Anm419/proxy_config/main/Loon/rule/Inner/Synthesis/Synthesis.list,policy=DIRECT,tag=Synthesis,enabled=true
 
 # > 银行及银联相关服务直连
 https://raw.githubusercontent.com/Anm419/proxy_config/main/Loon/rule/Inner/Bank/Bank.list,policy=DIRECT,tag=Bank,enabled=true
