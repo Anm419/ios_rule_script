@@ -138,55 +138,55 @@ FINAL,节点选择
 
 [Remote Rule]
 # > 自定义内网域名及订阅服务直连
-https://raw.githubusercontent.com/Anm419/proxy_config/main/Loon/rule/Inner/Custom/Extra.list,policy=DIRECT,tag=Extra,enabled=true
+https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Inner/Custom/Extra.list,policy=DIRECT,tag=Extra,enabled=true
 
 # 个人规则：与 Anm/Surge 的 Inner / Out 分类和订阅顺序对应。
-#https://raw.githubusercontent.com/Anm419/proxy_config/main/Loon/rule/Inner/Lan/Lan.list,policy=DIRECT,tag=Lan,enabled=true
+#https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Inner/Lan/Lan.list,policy=DIRECT,tag=Lan,enabled=true
 
 # > 广告、跟踪及恶意域名拦截
-https://raw.githubusercontent.com/Anm419/proxy_config/main/Loon/rule/Advertising/reject.list,policy=REJECT,tag=Advertising,enabled=true
+https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Advertising/reject.list,policy=REJECT,tag=Advertising,enabled=true
 
 # > 国内服务补充规则直连
-https://raw.githubusercontent.com/Anm419/proxy_config/main/Loon/rule/Inner/Synthesis/Synthesis.list,policy=DIRECT,tag=Synthesis,enabled=true
+https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Inner/Synthesis/Synthesis.list,policy=DIRECT,tag=Synthesis,enabled=true
 
 # > 腾讯网站、应用及相关服务直连
-https://raw.githubusercontent.com/Anm419/proxy_config/main/Loon/rule/Inner/Tencent/Tencent_All.list,policy=DIRECT,tag=Tencent,enabled=true
+https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Inner/Tencent/Tencent_All.list,policy=DIRECT,tag=Tencent,enabled=true
 
 # > 银行及银联相关服务直连
-https://raw.githubusercontent.com/Anm419/proxy_config/main/Loon/rule/Inner/Bank/Bank.list,policy=DIRECT,tag=Bank,enabled=true
+https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Inner/Bank/Bank.list,policy=DIRECT,tag=Bank,enabled=true
 
 # > 苹果设备、应用及云服务
-https://raw.githubusercontent.com/Anm419/proxy_config/main/Loon/rule/Out/Apple/Apple_All.list,policy=苹果服务,tag=Apple,enabled=true
+https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Out/Apple/Apple_All.list,policy=苹果服务,tag=Apple,enabled=true
 
 # > 微软应用及云服务
-https://raw.githubusercontent.com/Anm419/proxy_config/main/Loon/rule/Out/Microsoft/Microsoft.list,policy=微软服务,tag=Microsoft,enabled=true
+https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Out/Microsoft/Microsoft.list,policy=微软服务,tag=Microsoft,enabled=true
 
 # > OpenAI 人工智能服务
-https://raw.githubusercontent.com/Anm419/proxy_config/main/Loon/rule/Out/OpenAI/OpenAI.list,policy=人工智能,tag=OpenAI,enabled=true
+https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Out/OpenAI/OpenAI.list,policy=人工智能,tag=OpenAI,enabled=true
 
 # > 国外服务补充规则代理
-https://raw.githubusercontent.com/Anm419/proxy_config/main/Loon/rule/Out/Synthesis/Synthesis.list,policy=节点选择,tag=OutSynthesis,enabled=true
+https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Out/Synthesis/Synthesis.list,policy=节点选择,tag=OutSynthesis,enabled=true
 
 # > YouTube 视频服务
-https://raw.githubusercontent.com/Anm419/proxy_config/main/Loon/rule/Out/YouTube/YouTube.list,policy=油管视频,tag=YouTube,enabled=true
+https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Out/YouTube/YouTube.list,policy=油管视频,tag=YouTube,enabled=true
 
 # > 奈飞流媒体服务
-https://raw.githubusercontent.com/Anm419/proxy_config/main/Loon/rule/Out/Netflix/Netflix.list,policy=奈飞视频,tag=Netflix,enabled=true
+https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Out/Netflix/Netflix.list,policy=奈飞视频,tag=Netflix,enabled=true
 
 # > 迪士尼流媒体服务
-https://raw.githubusercontent.com/Anm419/proxy_config/main/Loon/rule/Out/Disney/Disney.list,policy=迪士尼+,tag=Disney,enabled=true
+https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Out/Disney/Disney.list,policy=迪士尼+,tag=Disney,enabled=true
 
 # > 谷歌搜索、应用及云服务
-https://raw.githubusercontent.com/Anm419/proxy_config/main/Loon/rule/Out/Google/Google.list,policy=谷歌服务,tag=Google,enabled=true
+https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Out/Google/Google.list,policy=谷歌服务,tag=Google,enabled=true
 
 # > Telegram 通讯服务
-https://raw.githubusercontent.com/Anm419/proxy_config/main/Loon/rule/Out/Telegram/Telegram.list,policy=电报信息,tag=Telegram,enabled=true
+https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Out/Telegram/Telegram.list,policy=电报信息,tag=Telegram,enabled=true
 
 # > 国内网站、影音及音乐服务直连
-https://raw.githubusercontent.com/Anm419/proxy_config/main/Loon/rule/Inner/China/China_All.list,policy=DIRECT,tag=China,enabled=true
+https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Inner/China/China_All.list,policy=DIRECT,tag=China,enabled=true
 
 # > 国外网站及相关服务综合代理
-https://raw.githubusercontent.com/Anm419/proxy_config/main/Loon/rule/Out/Global/Global_All.list,policy=节点选择,tag=Global,enabled=true
+https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Out/Global/Global_All.list,policy=节点选择,tag=Global,enabled=true
 
 
 [Rewrite]
