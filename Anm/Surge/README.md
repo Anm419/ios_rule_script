@@ -141,3 +141,5 @@ DOMAIN-SUFFIX,yixun.com
 ```
 
 - 将 `rule/Surge/WeChat/WeChat.list` 与 `rule/Surge/China/China_All.list` 对比，将未覆盖的规则合并到 `Anm/Surge/rule/Inner/Synthesis/Synthesis.list`。
+
+- 将 `rule/Surge/XianYu/XianYu.list` 内容合并到 `Anm/Surge/rule/Inner/Synthesis/Synthesis.list`。

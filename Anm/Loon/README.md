@@ -142,3 +142,5 @@ IP-ASN,132203,no-resolve
 ```
 
 - 将 `rule/Surge/WeChat/WeChat.list` 中 `rule/Loon/WeChat/WeChat.list` 未提供的 `DOMAIN-KEYWORD`、`IP-CIDR` 和 `IP-CIDR6` 规则与 `rule/Loon/China/China_Domain.list` 和 `rule/Loon/China/China_Resolve.list` 联合对比，将未覆盖的规则合并到 `Anm/Loon/rule/Inner/Synthesis/Synthesis.list`（沿用 Loon 支持的原语法，保留数字关键词及 IP 规则的 `no-resolve`）。
+
+- 将 `rule/Loon/XianYu/XianYu.list` 内容合并到 `Anm/Loon/rule/Inner/Synthesis/Synthesis.list`。
