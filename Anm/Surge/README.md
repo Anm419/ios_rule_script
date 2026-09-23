@@ -2,6 +2,10 @@
 
 - 将 `https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/reject.txt` 内容复制到 `Anm/Surge/rule/Advertising/reject.list`。
 
+## Lan
+
+- 将 `rule/Surge/Lan/Lan.list` 内容复制到 `Anm/Surge/rule/Inner/Lan/Lan.list`。
+
 ## China
 
 - 将 `rule/Surge/China/China_All.list` 内容复制到 `Anm/Surge/rule/Inner/China/China_All.list`。

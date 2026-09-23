@@ -2,6 +2,10 @@
 
 - 将 `https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/reject.txt` 内容复制到 `Anm/Loon/rule/Advertising/reject.list`。
 
+## Lan
+
+- 将 `rule/Loon/Lan/Lan.list` 内容复制到 `Anm/Loon/rule/Inner/Lan/Lan.list`。
+
 ## China
 
 - 将 `rule/Loon/China/China_Domain.list` 转换后写入 `Anm/Loon/rule/Inner/China/China_All.list`（以 `.` 开头的域名去掉首个点并添加 `DOMAIN-SUFFIX,`，其余域名添加 `DOMAIN,`）。
