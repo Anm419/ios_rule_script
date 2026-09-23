@@ -11,6 +11,10 @@
 - 将 `rule/Surge/China/China_All.list` 内容复制到 `Anm/Surge/rule/Inner/China/China_All.list`。
 - 将 `rule/Surge/ChinaMedia/ChinaMedia.list` 内容合并到 `Anm/Surge/rule/Inner/China/China_All.list`。
 
+## Tencent
+
+- 将 `rule/Surge/Tencent/Tencent_All.list` 内容复制到 `Anm/Surge/rule/Inner/Tencent/Tencent_All.list`。
+
 ## Apple
 
 - 将 `rule/Surge/Apple/Apple_All.list` 内容复制到 `Anm/Surge/rule/Out/Apple/Apple_All.list`。
@@ -135,3 +139,5 @@ DOMAIN-SUFFIX,wanggou.com
 DOMAIN-SUFFIX,yihaomall.com
 DOMAIN-SUFFIX,yixun.com
 ```
+
+- 将 `rule/Surge/WeChat/WeChat.list` 与 `rule/Surge/China/China_All.list` 对比，将未覆盖的规则合并到 `Anm/Surge/rule/Inner/Synthesis/Synthesis.list`。

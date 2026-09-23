@@ -12,6 +12,11 @@
 - 将 `rule/Loon/China/China_Resolve.list` 内容合并到 `Anm/Loon/rule/Inner/China/China_All.list`。
 - 将 `rule/Loon/ChinaMedia/ChinaMedia.list` 内容合并到 `Anm/Loon/rule/Inner/China/China_All.list`（该来源较 Surge 少 6 条 `PROCESS-NAME` 规则）。
 
+## Tencent
+
+- 将 `rule/Loon/Tencent/Tencent_Domain.list` 按“以 `.` 开头的域名去掉首个点并添加 `DOMAIN-SUFFIX,`，其余域名添加 `DOMAIN,`”转换后写入 `Anm/Loon/rule/Inner/Tencent/Tencent_All.list`。
+- 将 `rule/Loon/Tencent/Tencent_Resolve.list` 内容合并到 `Anm/Loon/rule/Inner/Tencent/Tencent_All.list`。
+
 ## Apple
 
 - 将 `rule/Loon/Apple/Apple_Domain.list` 转换后写入 `Anm/Loon/rule/Out/Apple/Apple_All.list`（以 `.` 开头的域名去掉首个点并添加 `DOMAIN-SUFFIX,`，其余域名添加 `DOMAIN,`；较 Surge 缺少 13 条进程名规则，无法等价转换，按其他规则继续分流）。
@@ -122,3 +127,18 @@ DOMAIN-SUFFIX,wanggou.com
 DOMAIN-SUFFIX,yihaomall.com
 DOMAIN-SUFFIX,yixun.com
 ```
+
+- 将 `rule/Loon/WeChat/WeChat.list` 与 `rule/Loon/China/China_Domain.list` 和 `rule/Loon/China/China_Resolve.list` 联合对比，将未覆盖的规则合并到 `Anm/Loon/rule/Inner/Synthesis/Synthesis.list`。
+
+```text
+DOMAIN,slife.xy-asia.com
+DOMAIN-SUFFIX,iot-tencent.com
+DOMAIN-SUFFIX,wechatlegal.net
+DOMAIN-SUFFIX,wechatos.net
+DOMAIN-SUFFIX,wechatpay.com
+DOMAIN-SUFFIX,weixin.com
+DOMAIN-SUFFIX,weixinsxy.com
+IP-ASN,132203,no-resolve
+```
+
+- 将 `rule/Surge/WeChat/WeChat.list` 中 `rule/Loon/WeChat/WeChat.list` 未提供的 `DOMAIN-KEYWORD`、`IP-CIDR` 和 `IP-CIDR6` 规则与 `rule/Loon/China/China_Domain.list` 和 `rule/Loon/China/China_Resolve.list` 联合对比，将未覆盖的规则合并到 `Anm/Loon/rule/Inner/Synthesis/Synthesis.list`（沿用 Loon 支持的原语法，保留数字关键词及 IP 规则的 `no-resolve`）。
