@@ -138,7 +138,7 @@ FINAL,节点选择
 
 [Remote Rule]
 # > 自定义内网域名及订阅服务直连
-https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Inner/Custom/Extra.list,policy=DIRECT,tag=Extra,enabled=true
+https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Inner/Custom/Custom.list,policy=DIRECT,tag=Custom,enabled=true
 
 # 个人规则：与 Anm/Surge 的 Inner / Out 分类和订阅顺序对应。
 https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Inner/Lan/Lan.list,policy=DIRECT,tag=Lan,enabled=true
