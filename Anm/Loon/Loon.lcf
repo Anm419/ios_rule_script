@@ -164,8 +164,8 @@ https://raw.githubusercontent.com/Anm419/proxy_config/main/Loon/rule/Out/Microso
 # > OpenAI 人工智能服务
 https://raw.githubusercontent.com/Anm419/proxy_config/main/Loon/rule/Out/OpenAI/OpenAI.list,policy=人工智能,tag=OpenAI,enabled=true
 
-# > GitHub 代码托管及下载服务
-https://raw.githubusercontent.com/Anm419/proxy_config/main/Loon/rule/Out/GitHub/GitHub.list,policy=节点选择,tag=GitHub,enabled=true
+# > 国外服务补充规则代理
+https://raw.githubusercontent.com/Anm419/proxy_config/main/Loon/rule/Out/Synthesis/Synthesis.list,policy=节点选择,tag=OutSynthesis,enabled=true
 
 # > YouTube 视频服务
 https://raw.githubusercontent.com/Anm419/proxy_config/main/Loon/rule/Out/YouTube/YouTube.list,policy=油管视频,tag=YouTube,enabled=true
