@@ -147,7 +147,7 @@ https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/In
 https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Advertising/reject.list,policy=REJECT,tag=Advertising,enabled=true
 
 # > 国内服务补充规则直连
-https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Inner/Synthesis/Synthesis.list,policy=DIRECT,tag=Synthesis,enabled=true
+https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Inner/Synthesis/Synthesis_Inner.list,policy=DIRECT,tag=Synthesis_Inner,enabled=true
 
 # > 腾讯网站、应用及相关服务直连
 https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Inner/Tencent/Tencent_All.list,policy=DIRECT,tag=Tencent,enabled=true
@@ -168,7 +168,7 @@ https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Ou
 https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Out/OpenAI/OpenAI.list,policy=人工智能,tag=OpenAI,enabled=true
 
 # > 国外服务补充规则代理
-https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Out/Synthesis/Synthesis.list,policy=节点选择,tag=OutSynthesis,enabled=true
+https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Out/Synthesis/Synthesis_Out.list,policy=节点选择,tag=Synthesis_Out,enabled=true
 
 # > YouTube 视频服务
 https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Out/YouTube/YouTube.list,policy=油管视频,tag=YouTube,enabled=true

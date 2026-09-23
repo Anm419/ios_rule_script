@@ -86,28 +86,29 @@ IP-CIDR,108.160.166.62/32,no-resolve
 - 将 `rule/Loon/UnionPay/UnionPay.list` 内容合并到 `Anm/Loon/rule/Inner/Bank/Bank.list`。
 - 将 `rule/Loon/ICBC/ICBC.list` 内容合并到 `Anm/Loon/rule/Inner/Bank/Bank.list`。
 
-## Synthesis
+## Synthesis_Out
 
-- 将 `rule/Loon/GitHub/GitHub.list` 内容复制到 `Anm/Loon/rule/Out/Synthesis/Synthesis.list`。
+- 将 `rule/Loon/GitHub/GitHub.list` 内容复制到 `Anm/Loon/rule/Out/Synthesis/Synthesis_Out.list`。
 
+## Synthesis_Inner
 
-- 将 `rule/Loon/AliPay/AliPay.list` 与 `Anm/Loon/rule/Inner/China/China_All.list` 对比，将未覆盖的规则合并到 `Anm/Loon/rule/Inner/Synthesis/Synthesis.list`。
+- 将 `rule/Loon/AliPay/AliPay.list` 与 `Anm/Loon/rule/Inner/China/China_All.list` 对比，将未覆盖的规则合并到 `Anm/Loon/rule/Inner/Synthesis/Synthesis_Inner.list`。
 
 ```text
 DOMAIN-SUFFIX,luohanacademy.com
 ```
 
-- 将 `rule/Loon/DouYin/DouYin.list` 与 `Anm/Loon/rule/Inner/China/China_All.list` 对比，将未覆盖的规则合并到 `Anm/Loon/rule/Inner/Synthesis/Synthesis.list`。
+- 将 `rule/Loon/DouYin/DouYin.list` 与 `Anm/Loon/rule/Inner/China/China_All.list` 对比，将未覆盖的规则合并到 `Anm/Loon/rule/Inner/Synthesis/Synthesis_Inner.list`。
 
 ```text
 DOMAIN-SUFFIX,idouyinvod.com
 ```
 
-- 将 `rule/Loon/Alibaba/Alibaba_Domain.list` 按“以 `.` 开头的域名去掉首个点并添加 `DOMAIN-SUFFIX,`，其余域名添加 `DOMAIN,`”转换后，与 `Anm/Loon/rule/Inner/China/China_All.list` 和 `Anm/Loon/rule/Inner/Synthesis/Synthesis.list`（排除 `rule/Loon/Alibaba/` 来源的规则组）联合对比，将未覆盖的规则合并到 `Anm/Loon/rule/Inner/Synthesis/Synthesis.list`。
+- 将 `rule/Loon/Alibaba/Alibaba_Domain.list` 按“以 `.` 开头的域名去掉首个点并添加 `DOMAIN-SUFFIX,`，其余域名添加 `DOMAIN,`”转换后，与 `Anm/Loon/rule/Inner/China/China_All.list` 和 `Anm/Loon/rule/Inner/Synthesis/Synthesis_Inner.list`（排除 `rule/Loon/Alibaba/` 来源的规则组）联合对比，将未覆盖的规则合并到 `Anm/Loon/rule/Inner/Synthesis/Synthesis_Inner.list`。
 
-- 将 `rule/Loon/Alibaba/Alibaba_Resolve.list` 与 `Anm/Loon/rule/Inner/China/China_All.list` 和 `Anm/Loon/rule/Inner/Synthesis/Synthesis.list`（排除 `rule/Loon/Alibaba/` 来源的规则组）联合对比，将未覆盖的规则合并到 `Anm/Loon/rule/Inner/Synthesis/Synthesis.list`（较 Surge 缺少 `PROCESS-NAME,com.taobao.taobao`，无等价转换，其他请求按现有规则分流）。
+- 将 `rule/Loon/Alibaba/Alibaba_Resolve.list` 与 `Anm/Loon/rule/Inner/China/China_All.list` 和 `Anm/Loon/rule/Inner/Synthesis/Synthesis_Inner.list`（排除 `rule/Loon/Alibaba/` 来源的规则组）联合对比，将未覆盖的规则合并到 `Anm/Loon/rule/Inner/Synthesis/Synthesis_Inner.list`（较 Surge 缺少 `PROCESS-NAME,com.taobao.taobao`，无等价转换，其他请求按现有规则分流）。
 
-- 将 `rule/Loon/Download/Download.list` 与 `Anm/Loon/rule/Inner/China/China_All.list` 对比，将未覆盖的规则合并到 `Anm/Loon/rule/Inner/Synthesis/Synthesis.list`（较 Surge 缺少 13 条进程规则，无等价转换，其他请求按现有规则分流；HTTPS URL 匹配需 MITM）。
+- 将 `rule/Loon/Download/Download.list` 与 `Anm/Loon/rule/Inner/China/China_All.list` 对比，将未覆盖的规则合并到 `Anm/Loon/rule/Inner/Synthesis/Synthesis_Inner.list`（较 Surge 缺少 13 条进程规则，无等价转换，其他请求按现有规则分流；HTTPS URL 匹配需 MITM）。
 
 ```text
 DOMAIN-SUFFIX,qbittorrent.org
@@ -119,7 +120,7 @@ DOMAIN-KEYWORD,yunpan
 URL-REGEX,assets\d+\.xboxlive\.(com|cn)
 ```
 
-- 将 `rule/Loon/JingDong/JingDong.list` 与 `Anm/Loon/rule/Inner/China/China_All.list` 对比，将未覆盖的规则合并到 `Anm/Loon/rule/Inner/Synthesis/Synthesis.list`。
+- 将 `rule/Loon/JingDong/JingDong.list` 与 `Anm/Loon/rule/Inner/China/China_All.list` 对比，将未覆盖的规则合并到 `Anm/Loon/rule/Inner/Synthesis/Synthesis_Inner.list`。
 
 ```text
 DOMAIN-SUFFIX,buyjingxi.com
@@ -142,7 +143,7 @@ DOMAIN-SUFFIX,yihaomall.com
 DOMAIN-SUFFIX,yixun.com
 ```
 
-- 将 `rule/Loon/WeChat/WeChat.list` 与 `rule/Loon/China/China_Domain.list` 和 `rule/Loon/China/China_Resolve.list` 联合对比，将未覆盖的规则合并到 `Anm/Loon/rule/Inner/Synthesis/Synthesis.list`。
+- 将 `rule/Loon/WeChat/WeChat.list` 与 `rule/Loon/China/China_Domain.list` 和 `rule/Loon/China/China_Resolve.list` 联合对比，将未覆盖的规则合并到 `Anm/Loon/rule/Inner/Synthesis/Synthesis_Inner.list`。
 
 ```text
 DOMAIN,slife.xy-asia.com
@@ -155,6 +156,6 @@ DOMAIN-SUFFIX,weixinsxy.com
 IP-ASN,132203,no-resolve
 ```
 
-- 将 `rule/Surge/WeChat/WeChat.list` 中 `rule/Loon/WeChat/WeChat.list` 未提供的 `DOMAIN-KEYWORD`、`IP-CIDR` 和 `IP-CIDR6` 规则与 `rule/Loon/China/China_Domain.list` 和 `rule/Loon/China/China_Resolve.list` 联合对比，将未覆盖的规则合并到 `Anm/Loon/rule/Inner/Synthesis/Synthesis.list`（沿用 Loon 支持的原语法，保留数字关键词及 IP 规则的 `no-resolve`）。
+- 将 `rule/Surge/WeChat/WeChat.list` 中 `rule/Loon/WeChat/WeChat.list` 未提供的 `DOMAIN-KEYWORD`、`IP-CIDR` 和 `IP-CIDR6` 规则与 `rule/Loon/China/China_Domain.list` 和 `rule/Loon/China/China_Resolve.list` 联合对比，将未覆盖的规则合并到 `Anm/Loon/rule/Inner/Synthesis/Synthesis_Inner.list`（沿用 Loon 支持的原语法，保留数字关键词及 IP 规则的 `no-resolve`）。
 
-- 将 `rule/Loon/XianYu/XianYu.list` 内容合并到 `Anm/Loon/rule/Inner/Synthesis/Synthesis.list`。
+- 将 `rule/Loon/XianYu/XianYu.list` 内容合并到 `Anm/Loon/rule/Inner/Synthesis/Synthesis_Inner.list`。

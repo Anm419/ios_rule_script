@@ -81,31 +81,33 @@ IP-CIDR,108.160.166.62/32,no-resolve
 - 将 `rule/Surge/UnionPay/UnionPay.list` 内容合并到 `Anm/Surge/rule/Inner/Bank/Bank.list`。
 - 将 `rule/Surge/ICBC/ICBC.list` 内容合并到 `Anm/Surge/rule/Inner/Bank/Bank.list`。
 
-## Synthesis
+## Synthesis_Out
 
-- 将 `rule/Surge/GitHub/GitHub.list` 内容复制到 `Anm/Surge/rule/Out/Synthesis/Synthesis.list`。
+- 将 `rule/Surge/GitHub/GitHub.list` 内容复制到 `Anm/Surge/rule/Out/Synthesis/Synthesis_Out.list`。
 
-- 将 `rule/Surge/AliPay/AliPay.list` 与 `Anm/Surge/rule/Inner/China/China_All.list` 对比，将未覆盖的规则合并到 `Anm/Surge/rule/Inner/Synthesis/Synthesis.list`。
+## Synthesis_Inner
+
+- 将 `rule/Surge/AliPay/AliPay.list` 与 `Anm/Surge/rule/Inner/China/China_All.list` 对比，将未覆盖的规则合并到 `Anm/Surge/rule/Inner/Synthesis/Synthesis_Inner.list`。
 
 ```text
 DOMAIN-SUFFIX,luohanacademy.com
 ```
 
-- 将 `rule/Surge/DouYin/DouYin.list` 与 `Anm/Surge/rule/Inner/China/China_All.list` 对比，将未覆盖的规则合并到 `Anm/Surge/rule/Inner/Synthesis/Synthesis.list`。
+- 将 `rule/Surge/DouYin/DouYin.list` 与 `Anm/Surge/rule/Inner/China/China_All.list` 对比，将未覆盖的规则合并到 `Anm/Surge/rule/Inner/Synthesis/Synthesis_Inner.list`。
 
 ```text
 DOMAIN-SUFFIX,idouyinvod.com
 ```
 
-- 将 `rule/Surge/iQIYI/iQIYI.list` 与 `Anm/Surge/rule/Inner/China/China_All.list` 对比，将未覆盖的规则合并到 `Anm/Surge/rule/Inner/Synthesis/Synthesis.list`（进程规则仅 Surge Mac 支持，iOS 忽略；Loon 对应来源无此规则，未找到等价转换，沿用现有规则）。
+- 将 `rule/Surge/iQIYI/iQIYI.list` 与 `Anm/Surge/rule/Inner/China/China_All.list` 对比，将未覆盖的规则合并到 `Anm/Surge/rule/Inner/Synthesis/Synthesis_Inner.list`（进程规则仅 Surge Mac 支持，iOS 忽略；Loon 对应来源无此规则，未找到等价转换，沿用现有规则）。
 
 ```text
 PROCESS-NAME,com.qiyi.video
 ```
 
-- 将 `rule/Surge/Alibaba/Alibaba_All.list` 与 `Anm/Surge/rule/Inner/China/China_All.list` 和 `Anm/Surge/rule/Inner/Synthesis/Synthesis.list`（排除 `rule/Surge/Alibaba/` 来源的规则组）联合对比，将未覆盖的规则合并到 `Anm/Surge/rule/Inner/Synthesis/Synthesis.list`（进程规则仅 Surge Mac 支持，iOS 忽略；Loon 对应来源无此规则且无等价转换，其他请求按现有规则分流）。
+- 将 `rule/Surge/Alibaba/Alibaba_All.list` 与 `Anm/Surge/rule/Inner/China/China_All.list` 和 `Anm/Surge/rule/Inner/Synthesis/Synthesis_Inner.list`（排除 `rule/Surge/Alibaba/` 来源的规则组）联合对比，将未覆盖的规则合并到 `Anm/Surge/rule/Inner/Synthesis/Synthesis_Inner.list`（进程规则仅 Surge Mac 支持，iOS 忽略；Loon 对应来源无此规则且无等价转换，其他请求按现有规则分流）。
 
-- 将 `rule/Surge/Download/Download.list` 与 `Anm/Surge/rule/Inner/China/China_All.list` 对比，将未覆盖的规则合并到 `Anm/Surge/rule/Inner/Synthesis/Synthesis.list`（进程规则仅 Surge Mac 支持，iOS 忽略；Loon 对应来源缺少 13 条进程规则，无等价转换，其他请求按现有规则分流；HTTPS URL 匹配需 MITM）。
+- 将 `rule/Surge/Download/Download.list` 与 `Anm/Surge/rule/Inner/China/China_All.list` 对比，将未覆盖的规则合并到 `Anm/Surge/rule/Inner/Synthesis/Synthesis_Inner.list`（进程规则仅 Surge Mac 支持，iOS 忽略；Loon 对应来源缺少 13 条进程规则，无等价转换，其他请求按现有规则分流；HTTPS URL 匹配需 MITM）。
 
 ```text
 DOMAIN-SUFFIX,qbittorrent.org
@@ -130,7 +132,7 @@ PROCESS-NAME,qbittorrent
 PROCESS-NAME,uTorrent
 ```
 
-- 将 `rule/Surge/JingDong/JingDong.list` 与 `Anm/Surge/rule/Inner/China/China_All.list` 对比，将未覆盖的规则合并到 `Anm/Surge/rule/Inner/Synthesis/Synthesis.list`。
+- 将 `rule/Surge/JingDong/JingDong.list` 与 `Anm/Surge/rule/Inner/China/China_All.list` 对比，将未覆盖的规则合并到 `Anm/Surge/rule/Inner/Synthesis/Synthesis_Inner.list`。
 
 ```text
 DOMAIN-SUFFIX,buyjingxi.com
@@ -153,6 +155,6 @@ DOMAIN-SUFFIX,yihaomall.com
 DOMAIN-SUFFIX,yixun.com
 ```
 
-- 将 `rule/Surge/WeChat/WeChat.list` 与 `rule/Surge/China/China_All.list` 对比，将未覆盖的规则合并到 `Anm/Surge/rule/Inner/Synthesis/Synthesis.list`。
+- 将 `rule/Surge/WeChat/WeChat.list` 与 `rule/Surge/China/China_All.list` 对比，将未覆盖的规则合并到 `Anm/Surge/rule/Inner/Synthesis/Synthesis_Inner.list`。
 
-- 将 `rule/Surge/XianYu/XianYu.list` 内容合并到 `Anm/Surge/rule/Inner/Synthesis/Synthesis.list`。
+- 将 `rule/Surge/XianYu/XianYu.list` 内容合并到 `Anm/Surge/rule/Inner/Synthesis/Synthesis_Inner.list`。
