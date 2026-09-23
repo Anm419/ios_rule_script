@@ -70,11 +70,6 @@ DOMAIN-SUFFIX,synergypeak.org,DIRECT
 
 - 将 `rule/Loon/OpenAI/OpenAI.list` 内容复制到 `Anm/Loon/rule/Out/OpenAI/OpenAI.list`。
 
-## Proxy
-
-- 将 `rule/Loon/Proxy/Proxy_Domain.list` 转换后写入 `Anm/Loon/rule/Out/Proxy/Proxy_All.list`（以 `.` 开头的域名去掉首个点并添加 `DOMAIN-SUFFIX,`，其余域名添加 `DOMAIN,`）。
-- 将 `rule/Loon/Proxy/Proxy_Resolve.list` 内容合并到 `Anm/Loon/rule/Out/Proxy/Proxy_All.list`。
-
 ## Telegram
 
 - 将 `rule/Loon/Telegram/Telegram.list` 内容复制到 `Anm/Loon/rule/Out/Telegram/Telegram.list`（较 Surge 缺少 5 条进程名规则，无法等价转换，按其他规则继续分流；Surge 的 OR 所列 5 个 ASN 已由本来源同选项的独立 IP-ASN 规则等价覆盖）。

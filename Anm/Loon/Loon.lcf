@@ -191,9 +191,6 @@ https://raw.githubusercontent.com/Anm419/proxy_config/main/Loon/rule/Out/GlobalM
 # > 国外网站及相关服务综合代理
 https://raw.githubusercontent.com/Anm419/proxy_config/main/Loon/rule/Out/Global/Global_All.list,policy=节点选择,tag=Global,enabled=true
 
-# > 国外网站及通用代理服务
-https://raw.githubusercontent.com/Anm419/proxy_config/main/Loon/rule/Out/Proxy/Proxy_All.list,policy=节点选择,tag=Proxy,enabled=true
-
 
 [Rewrite]
 ^https?://(www\.)?(g|google)\.cn 307 https://www.google.com

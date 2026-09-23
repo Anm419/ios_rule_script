@@ -64,10 +64,6 @@ DOMAIN-SUFFIX,synergypeak.org,DIRECT
 
 - 将 `rule/Surge/OpenAI/OpenAI.list` 内容复制到 `Anm/Surge/rule/Out/OpenAI/OpenAI.list`。
 
-## Proxy
-
-- 将 `rule/Surge/Proxy/Proxy_All.list` 内容复制到 `Anm/Surge/rule/Out/Proxy/Proxy_All.list`。
-
 ## Telegram
 
 - 将 `rule/Surge/Telegram/Telegram.list` 内容复制到 `Anm/Surge/rule/Out/Telegram/Telegram.list`。
