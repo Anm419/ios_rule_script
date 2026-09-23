@@ -137,8 +137,8 @@ GEOIP,CN,DIRECT
 FINAL,节点选择
 
 [Remote Rule]
-# > 内网 DNS 域名直连
-https://raw.githubusercontent.com/Anm419/proxy_config/main/Loon/rule/Inner/Extra/Extra.list,policy=DIRECT,tag=Extra,enabled=true
+# > 自定义内网域名及订阅服务直连
+https://raw.githubusercontent.com/Anm419/proxy_config/main/Loon/rule/Inner/Custom/Extra.list,policy=DIRECT,tag=Extra,enabled=true
 
 # 个人规则：与 Anm/Surge 的 Inner / Out 分类和订阅顺序对应。
 #https://raw.githubusercontent.com/Anm419/proxy_config/main/Loon/rule/Inner/Lan/Lan.list,policy=DIRECT,tag=Lan,enabled=true

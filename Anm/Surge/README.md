@@ -4,7 +4,7 @@
 
 ## Extra
 
-- 将用户自定义的以下规则添加到 `Anm/Surge/rule/Inner/Extra/Extra.list`。
+- 将用户自定义的以下规则从 `Anm/Surge/rule/Inner/Extra/Extra.list` 迁移到 `Anm/Surge/rule/Inner/Custom/Extra.list`。
 
 ```text
 DOMAIN-SUFFIX,aiguoai.com
