@@ -81,3 +81,5 @@ DOMAIN-SUFFIX,idouyinvod.com
 ```text
 PROCESS-NAME,com.qiyi.video
 ```
+
+- 将 `rule/Surge/Alibaba/Alibaba_All.list` 与 `Anm/Surge/rule/Inner/China/China_All.list` 和 `Anm/Surge/rule/Inner/Synthesis/Synthesis.list`（排除 `rule/Surge/Alibaba/` 来源的规则组）联合对比，将未覆盖的规则合并到 `Anm/Surge/rule/Inner/Synthesis/Synthesis.list`（进程规则仅 Surge Mac 支持，iOS 忽略；Loon 对应来源无此规则且无等价转换，其他请求按现有规则分流）。

@@ -79,3 +79,7 @@ DOMAIN-SUFFIX,luohanacademy.com
 ```text
 DOMAIN-SUFFIX,idouyinvod.com
 ```
+
+- 将 `rule/Loon/Alibaba/Alibaba_Domain.list` 按“以 `.` 开头的域名去掉首个点并添加 `DOMAIN-SUFFIX,`，其余域名添加 `DOMAIN,`”转换后，与 `Anm/Loon/rule/Inner/China/China_All.list` 和 `Anm/Loon/rule/Inner/Synthesis/Synthesis.list`（排除 `rule/Loon/Alibaba/` 来源的规则组）联合对比，将未覆盖的规则合并到 `Anm/Loon/rule/Inner/Synthesis/Synthesis.list`。
+
+- 将 `rule/Loon/Alibaba/Alibaba_Resolve.list` 与 `Anm/Loon/rule/Inner/China/China_All.list` 和 `Anm/Loon/rule/Inner/Synthesis/Synthesis.list`（排除 `rule/Loon/Alibaba/` 来源的规则组）联合对比，将未覆盖的规则合并到 `Anm/Loon/rule/Inner/Synthesis/Synthesis.list`（较 Surge 缺少 `PROCESS-NAME,com.taobao.taobao`，无等价转换，其他请求按现有规则分流）。
