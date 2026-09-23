@@ -41,6 +41,14 @@ DOMAIN-SUFFIX,synergypeak.org,DIRECT
 
 - 将 `rule/Loon/GitHub/GitHub.list` 内容复制到 `Anm/Loon/rule/Out/GitHub/GitHub.list`。
 
+## Global
+
+- 将 `rule/Loon/Global/Global_Domain.list` 按“以 `.` 开头的域名去掉首个点并添加 `DOMAIN-SUFFIX,`，其余域名添加 `DOMAIN,`”转换后写入 `Anm/Loon/rule/Out/Global/Global_All.list`。
+- 将 `rule/Loon/Global/Global_Resolve.list` 内容合并到 `Anm/Loon/rule/Out/Global/Global_All.list`（较 Surge 缺少 `PROCESS-NAME,LookupViewService`，Loon 不支持进程匹配，无法等价转换，按其他规则继续分流）。
+
+- 将 `rule/Loon/GlobalMedia/GlobalMedia_Domain.list` 按“以 `.` 开头的域名去掉首个点并添加 `DOMAIN-SUFFIX,`，其余域名添加 `DOMAIN,`”转换后，与 `Anm/Loon/rule/Out/Global/Global_All.list`（先导入 Global 来源，排除 `rule/Loon/GlobalMedia/` 来源的规则组）对比，将未覆盖的规则合并到 `Anm/Loon/rule/Out/Global/Global_All.list`。
+- 将 `rule/Loon/GlobalMedia/GlobalMedia_Resolve.list` 与 `Anm/Loon/rule/Out/Global/Global_All.list`（先导入 Global 来源，排除 `rule/Loon/GlobalMedia/` 来源的规则组）对比，将未覆盖的规则合并到 `Anm/Loon/rule/Out/Global/Global_All.list`（较 Surge 缺少 `com.viu.pad`、`com.viu.phone`、`com.vuclip.viu` 三条进程规则，无法等价转换，按其他规则继续分流）。
+
 ## GlobalMedia
 
 - 将 `rule/Loon/GlobalMedia/GlobalMedia_Domain.list` 转换后写入 `Anm/Loon/rule/Out/GlobalMedia/GlobalMedia_All.list`（以 `.` 开头的域名去掉首个点并添加 `DOMAIN-SUFFIX,`，其余域名添加 `DOMAIN,`；较 Surge 缺少 3 条进程名规则，无法等价转换，按其他规则继续分流）。
