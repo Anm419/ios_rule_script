@@ -141,7 +141,7 @@ FINAL,节点选择
 https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Inner/Custom/Extra.list,policy=DIRECT,tag=Extra,enabled=true
 
 # 个人规则：与 Anm/Surge 的 Inner / Out 分类和订阅顺序对应。
-#https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Inner/Lan/Lan.list,policy=DIRECT,tag=Lan,enabled=true
+https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Inner/Lan/Lan.list,policy=DIRECT,tag=Lan,enabled=true
 
 # > 广告、跟踪及恶意域名拦截
 https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Advertising/reject.list,policy=REJECT,tag=Advertising,enabled=true
@@ -154,6 +154,9 @@ https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/In
 
 # > 银行及银联相关服务直连
 https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Inner/Bank/Bank.list,policy=DIRECT,tag=Bank,enabled=true
+
+# > 国内网站、影音及音乐服务直连
+https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Inner/China/China_All.list,policy=DIRECT,tag=China,enabled=true
 
 # > 苹果设备、应用及云服务
 https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Out/Apple/Apple_All.list,policy=苹果服务,tag=Apple,enabled=true
@@ -181,9 +184,6 @@ https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Ou
 
 # > Telegram 通讯服务
 https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Out/Telegram/Telegram.list,policy=电报信息,tag=Telegram,enabled=true
-
-# > 国内网站、影音及音乐服务直连
-https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Inner/China/China_All.list,policy=DIRECT,tag=China,enabled=true
 
 # > 国外网站及相关服务综合代理
 https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Out/Global/Global_All.list,policy=节点选择,tag=Global,enabled=true
