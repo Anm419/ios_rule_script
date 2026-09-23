@@ -144,7 +144,7 @@ https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Ad
 https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Inner/Lan/Lan.list,policy=DIRECT,tag=Lan,enabled=true
 
 # > 自定义内网域名及订阅服务直连
-https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Inner/Custom/Custom.list,policy=DIRECT,tag=Custom,enabled=true
+https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Inner/Custom/Custom_Inner.list,policy=DIRECT,tag=Custom_Inner,enabled=true
 
 # > 银行及银联相关服务直连
 https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Inner/Bank/Bank.list,policy=DIRECT,tag=Bank,enabled=true
@@ -154,6 +154,9 @@ https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/In
 
 # > 国内服务补充规则直连
 https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Inner/Synthesis/Synthesis_Inner.list,policy=DIRECT,tag=Synthesis_Inner,enabled=true
+
+# > 国内额外规则直连
+https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Inner/Extra/Extra_Inner.list,policy=DIRECT,tag=Extra_Inner,enabled=true
 
 # > 国内网站、影音及音乐服务直连
 https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Inner/China/China_All.list,policy=DIRECT,tag=China,enabled=true
@@ -184,6 +187,9 @@ https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Ou
 
 # > 国外服务补充规则代理
 https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Out/Synthesis/Synthesis_Out.list,policy=节点选择,tag=Synthesis_Out,enabled=true
+
+# > 国外额外规则代理
+https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Out/Extra/Extra_Out.list,policy=节点选择,tag=Extra_Out,enabled=true
 
 # > 国外网站及相关服务综合代理
 https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Out/Global/Global_All.list,policy=节点选择,tag=Global,enabled=true

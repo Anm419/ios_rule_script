@@ -2,9 +2,9 @@
 
 - 将 `https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/reject.txt` 内容复制到 `Anm/Loon/rule/Advertising/reject.list`。
 
-## Custom
+## Custom_Inner
 
-- 将用户自定义的以下规则添加到 `Anm/Loon/rule/Inner/Custom/Custom.list`。
+- 将用户自定义的以下规则添加到 `Anm/Loon/rule/Inner/Custom/Custom_Inner.list`。
 
 ```text
 DOMAIN-SUFFIX,aiguoai.com
