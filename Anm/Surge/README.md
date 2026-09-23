@@ -56,6 +56,12 @@ DOMAIN-SUFFIX,synergypeak.org,DIRECT
 
 - 将 `rule/Surge/OpenAI/OpenAI.list` 内容复制到 `Anm/Surge/rule/Out/OpenAI/OpenAI.list`。
 
+- 将用户自定义的以下规则添加到 `Anm/Surge/rule/Out/OpenAI/OpenAI.list`。
+
+```text
+IP-CIDR,108.160.166.62/32,no-resolve
+```
+
 ## Telegram
 
 - 将 `rule/Surge/Telegram/Telegram.list` 内容复制到 `Anm/Surge/rule/Out/Telegram/Telegram.list`。

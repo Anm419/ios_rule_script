@@ -61,6 +61,12 @@ DOMAIN-SUFFIX,synergypeak.org,DIRECT
 
 - 将 `rule/Loon/OpenAI/OpenAI.list` 内容复制到 `Anm/Loon/rule/Out/OpenAI/OpenAI.list`。
 
+- 将用户自定义的以下规则添加到 `Anm/Loon/rule/Out/OpenAI/OpenAI.list`。
+
+```text
+IP-CIDR,108.160.166.62/32,no-resolve
+```
+
 ## Telegram
 
 - 将 `rule/Loon/Telegram/Telegram.list` 内容复制到 `Anm/Loon/rule/Out/Telegram/Telegram.list`（较 Surge 缺少 5 条进程名规则，无法等价转换，按其他规则继续分流；Surge 的 OR 所列 5 个 ASN 已由本来源同选项的独立 IP-ASN 规则等价覆盖）。
