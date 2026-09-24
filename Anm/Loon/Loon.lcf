@@ -161,6 +161,9 @@ https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/In
 # > 国内网站、影音及音乐服务直连
 https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Inner/China/China_All.list,policy=DIRECT,tag=China,enabled=true
 
+# > 克劳德人工智能服务
+https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Out/Claude/Claude.list,policy=人工智能,tag=Claude,enabled=true
+
 # > OpenAI 人工智能服务
 https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Out/OpenAI/OpenAI.list,policy=人工智能,tag=OpenAI,enabled=true
 

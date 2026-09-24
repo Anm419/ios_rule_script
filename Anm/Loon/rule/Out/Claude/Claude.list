@@ -1,0 +1,15 @@
+# SOURCE: rule/Loon/Claude/Claude.list
+# UPDATE: 2026-09-24 16:47:10
+# REMARK: Claude 人工智能服务规则，使用“人工智能”策略。
+DOMAIN,cdn.usefathom.com
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claude.ai
+
+# SOURCE: Anm/Loon/README.md#claude
+# UPDATE: 2026-09-24 16:54:14
+# REMARK: 用户自定义 Claude 域名及 IP 网段补充，使用“人工智能”策略，IP 规则保留 no-resolve。
+DOMAIN-SUFFIX,claude.com
+DOMAIN-SUFFIX,clau.de
+DOMAIN-SUFFIX,claudeusercontent.com
+IP-CIDR,160.79.104.0/23,no-resolve
+IP-CIDR6,2607:6bc0::/48,no-resolve

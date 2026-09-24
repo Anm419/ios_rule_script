@@ -57,6 +57,20 @@ DOMAIN-SUFFIX,synergypeak.org,DIRECT
 
 - 将 `rule/Loon/Netflix/Netflix.list` 内容复制到 `Anm/Loon/rule/Out/Netflix/Netflix.list`（较 Surge 缺少 1 条进程名规则，无法等价转换，按其他规则继续分流）。
 
+## Claude
+
+- 将 `rule/Loon/Claude/Claude.list` 内容复制到 `Anm/Loon/rule/Out/Claude/Claude.list`。
+
+- 将用户自定义的以下规则添加到 `Anm/Loon/rule/Out/Claude/Claude.list`。
+
+```text
+DOMAIN-SUFFIX,claude.com
+DOMAIN-SUFFIX,clau.de
+DOMAIN-SUFFIX,claudeusercontent.com
+IP-CIDR,160.79.104.0/23,no-resolve
+IP-CIDR6,2607:6bc0::/48,no-resolve
+```
+
 ## OpenAI
 
 - 将 `rule/Loon/OpenAI/OpenAI.list` 内容复制到 `Anm/Loon/rule/Out/OpenAI/OpenAI.list`。
