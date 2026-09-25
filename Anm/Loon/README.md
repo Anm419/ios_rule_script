@@ -112,6 +112,8 @@ IP-CIDR,108.160.166.62/32,no-resolve
 ```text
 DOMAIN-SUFFIX,jetbrains.com
 DOMAIN-SUFFIX,npmjs.org
+DOMAIN-SUFFIX,api-flowercloud.com
+DOMAIN-SUFFIX,zeroturnaround.com
 ```
 
 ## Extra_Out
@@ -120,6 +122,14 @@ DOMAIN-SUFFIX,npmjs.org
 
 ```text
 DOMAIN-SUFFIX,context7.com
+```
+
+## Extra_Inner
+
+- 将用户自定义的以下规则添加到 `Anm/Loon/rule/Inner/Extra/Extra_Inner.list`。
+
+```text
+DOMAIN-SUFFIX,speedtest.cn
 ```
 
 ## Synthesis_Inner

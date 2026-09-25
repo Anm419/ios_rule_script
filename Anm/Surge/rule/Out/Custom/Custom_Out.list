@@ -1,5 +1,7 @@
 # SOURCE: Anm/Surge/README.md#custom_out
-# UPDATE: 2026-09-25 16:31:32
-# REMARK: 用户自定义 JetBrains 和 npm 域名及子域名规则，使用“节点选择”策略。
+# UPDATE: 2026-09-25 16:56:46
+# REMARK: 用户自定义 JetBrains、npm、api-flowercloud.com 和 zeroturnaround.com 域名及子域名规则，使用“节点选择”策略。
 DOMAIN-SUFFIX,jetbrains.com
 DOMAIN-SUFFIX,npmjs.org
+DOMAIN-SUFFIX,api-flowercloud.com
+DOMAIN-SUFFIX,zeroturnaround.com
