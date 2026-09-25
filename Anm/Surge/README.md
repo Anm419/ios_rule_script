@@ -62,6 +62,7 @@ DOMAIN-SUFFIX,synergypeak.org,DIRECT
 DOMAIN-SUFFIX,claude.com
 DOMAIN-SUFFIX,clau.de
 DOMAIN-SUFFIX,claudeusercontent.com
+DOMAIN-SUFFIX,datadoghq.com
 IP-CIDR,160.79.104.0/23,no-resolve
 IP-CIDR6,2607:6bc0::/48,no-resolve
 ```
