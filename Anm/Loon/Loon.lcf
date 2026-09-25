@@ -131,9 +131,9 @@ Paypal = select,  DIRECT, 节点选择, 🇭🇰 香港节点, 🇺🇲 美国�
 🌐 其他节点 = url-test,其他节点筛选,interval=600,tolerance=50
 
 [Rule]
-# 域名规则优先匹配；未命中后再按 IP 规则与 FINAL 处理。
+# 国内cn库匹配
 GEOIP,CN,DIRECT
-# 保持 Surge 的最终出口：节点选择。
+# # > 兜底策略
 FINAL,兜底策略
 
 [Remote Rule]
