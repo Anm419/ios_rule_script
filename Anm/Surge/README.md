@@ -1,3 +1,30 @@
+## Process
+
+- 将用户自定义的以下规则添加到 `Anm/Surge/rule/Process/Process.list`（仅 Surge Mac 支持，iOS 忽略；Loon 不支持进程匹配，无法等价转换，沿用其他规则分流）。
+
+```text
+PROCESS-NAME,"/Applications/OpenVPN Connect/OpenVPN Connect.app/"
+PROCESS-NAME,v2ray
+PROCESS-NAME,xray
+PROCESS-NAME,clash
+PROCESS-NAME,naive
+PROCESS-NAME,trojan
+PROCESS-NAME,trojan-go
+PROCESS-NAME,ss-local
+PROCESS-NAME,privoxy
+PROCESS-NAME,leaf
+PROCESS-NAME,Thunder
+PROCESS-NAME,DownloadService
+PROCESS-NAME,qBittorrent
+PROCESS-NAME,Transmission
+PROCESS-NAME,fdm
+PROCESS-NAME,aria2c
+PROCESS-NAME,Folx
+PROCESS-NAME,NetTransport
+PROCESS-NAME,uTorrent
+PROCESS-NAME,WebTorrent
+```
+
 ## Advertising
 
 - 将 `https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/reject.txt` 内容复制到 `Anm/Surge/rule/Advertising/reject.list`。

@@ -1,0 +1,23 @@
+# SOURCE: Anm/Surge/README.md#process
+# UPDATE: 2026-09-25 18:26:08
+# REMARK: 用户自定义代理、VPN 和下载工具进程规则，用于直连分流；仅 Surge Mac 支持，iOS 忽略。
+PROCESS-NAME,"/Applications/OpenVPN Connect/OpenVPN Connect.app/"
+PROCESS-NAME,v2ray
+PROCESS-NAME,xray
+PROCESS-NAME,clash
+PROCESS-NAME,naive
+PROCESS-NAME,trojan
+PROCESS-NAME,trojan-go
+PROCESS-NAME,ss-local
+PROCESS-NAME,privoxy
+PROCESS-NAME,leaf
+PROCESS-NAME,Thunder
+PROCESS-NAME,DownloadService
+PROCESS-NAME,qBittorrent
+PROCESS-NAME,Transmission
+PROCESS-NAME,fdm
+PROCESS-NAME,aria2c
+PROCESS-NAME,Folx
+PROCESS-NAME,NetTransport
+PROCESS-NAME,uTorrent
+PROCESS-NAME,WebTorrent
