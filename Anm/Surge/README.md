@@ -3,7 +3,7 @@
 - 将用户自定义的以下规则添加到 `Anm/Surge/rule/Process/Process.list`（仅 Surge Mac 支持，iOS 忽略；Loon 不支持进程匹配，无法等价转换，沿用其他规则分流）。
 
 ```text
-PROCESS-NAME,"/Applications/OpenVPN Connect/OpenVPN Connect.app/"
+PROCESS-NAME,OpenVPN Connect
 PROCESS-NAME,v2ray
 PROCESS-NAME,xray
 PROCESS-NAME,clash
