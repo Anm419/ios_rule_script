@@ -134,7 +134,7 @@ Paypal = select,  DIRECT, 节点选择, 🇭🇰 香港节点, 🇺🇲 美国�
 # 域名规则优先匹配；未命中后再按 IP 规则与 FINAL 处理。
 GEOIP,CN,DIRECT
 # 保持 Surge 的最终出口：节点选择。
-FINAL,节点选择
+FINAL,兜底策略
 
 [Remote Rule]
 # > 广告、跟踪及恶意域名拦截
@@ -187,6 +187,9 @@ https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Ou
 
 # > 迪士尼流媒体服务
 https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Out/Disney/Disney.list,policy=迪士尼+,tag=Disney,enabled=true
+
+# > 自定义国外域名及服务代理
+https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Out/Custom/Custom_Out.list,policy=节点选择,tag=Custom_Out,enabled=true
 
 # > 国外服务补充规则代理
 https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Out/Synthesis/Synthesis_Out.list,policy=节点选择,tag=Synthesis_Out,enabled=true

@@ -100,6 +100,23 @@ IP-CIDR,108.160.166.62/32,no-resolve
 
 - 将 `rule/Surge/GitHub/GitHub.list` 内容复制到 `Anm/Surge/rule/Out/Synthesis/Synthesis_Out.list`。
 
+## Custom_Out
+
+- 将用户自定义的以下规则添加到 `Anm/Surge/rule/Out/Custom/Custom_Out.list`。
+
+```text
+DOMAIN-SUFFIX,jetbrains.com
+DOMAIN-SUFFIX,npmjs.org
+```
+
+## Extra_Out
+
+- 将用户自定义的以下规则添加到 `Anm/Surge/rule/Out/Extra/Extra_Out.list`。
+
+```text
+DOMAIN-SUFFIX,context7.com
+```
+
 ## Synthesis_Inner
 
 - 将 `rule/Surge/AliPay/AliPay.list` 与 `Anm/Surge/rule/Inner/China/China_All.list` 对比，将未覆盖的规则合并到 `Anm/Surge/rule/Inner/Synthesis/Synthesis_Inner.list`。
