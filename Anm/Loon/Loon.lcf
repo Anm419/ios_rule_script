@@ -194,6 +194,9 @@ https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Ou
 # > 国外服务补充规则代理
 https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Out/Synthesis/Synthesis_Out.list,policy=节点选择,tag=Synthesis_Out,enabled=true
 
+# > 美国分类域名及服务代理
+https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Out/USA/USA.list,policy=节点选择,tag=USA,enabled=true
+
 # > 国外额外规则代理
 https://raw.githubusercontent.com/Anm419/ios_rule_script/master/Anm/Loon/rule/Out/Extra/Extra_Out.list,policy=节点选择,tag=Extra_Out,enabled=true
 

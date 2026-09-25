@@ -1,0 +1,4 @@
+# SOURCE: Anm/Surge/README.md#usa
+# UPDATE: 2026-09-25 17:56:59
+# REMARK: 用户自定义 ping0.cc 域名及子域名规则，使用“节点选择”策略。
+DOMAIN-SUFFIX,ping0.cc

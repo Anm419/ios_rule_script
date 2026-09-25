@@ -159,10 +159,17 @@ DOMAIN-SUFFIX,api-flowercloud.com
 
 ```text
 DOMAIN-SUFFIX,context7.com
-DOMAIN-SUFFIX,ping0.cc
 DOMAIN-SUFFIX,jetbrains.com
 DOMAIN-SUFFIX,npmjs.org
 DOMAIN-SUFFIX,zeroturnaround.com
+```
+
+## USA
+
+- 将用户自定义的以下规则添加到 `Anm/Surge/rule/Out/USA/USA.list`。
+
+```text
+DOMAIN-SUFFIX,ping0.cc
 ```
 
 ## Extra_Inner
