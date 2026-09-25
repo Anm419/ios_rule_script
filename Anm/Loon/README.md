@@ -110,10 +110,7 @@ IP-CIDR,108.160.166.62/32,no-resolve
 - 将用户自定义的以下规则添加到 `Anm/Loon/rule/Out/Custom/Custom_Out.list`。
 
 ```text
-DOMAIN-SUFFIX,jetbrains.com
-DOMAIN-SUFFIX,npmjs.org
 DOMAIN-SUFFIX,api-flowercloud.com
-DOMAIN-SUFFIX,zeroturnaround.com
 ```
 
 ## Extra_Out
@@ -122,6 +119,10 @@ DOMAIN-SUFFIX,zeroturnaround.com
 
 ```text
 DOMAIN-SUFFIX,context7.com
+DOMAIN-SUFFIX,ping0.cc
+DOMAIN-SUFFIX,jetbrains.com
+DOMAIN-SUFFIX,npmjs.org
+DOMAIN-SUFFIX,zeroturnaround.com
 ```
 
 ## Extra_Inner

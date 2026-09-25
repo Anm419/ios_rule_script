@@ -1,4 +1,8 @@
 # SOURCE: Anm/Loon/README.md#extra_out
-# UPDATE: 2026-09-25 16:28:33
-# REMARK: 用户自定义 Context7 域名及子域名规则，使用“节点选择”策略。
+# UPDATE: 2026-09-25 17:13:40
+# REMARK: 用户自定义 Context7、ping0.cc、JetBrains、npm 和 zeroturnaround.com 域名及子域名规则，使用“节点选择”策略。
 DOMAIN-SUFFIX,context7.com
+DOMAIN-SUFFIX,ping0.cc
+DOMAIN-SUFFIX,jetbrains.com
+DOMAIN-SUFFIX,npmjs.org
+DOMAIN-SUFFIX,zeroturnaround.com
