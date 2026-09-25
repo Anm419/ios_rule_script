@@ -1,6 +1,6 @@
 # SOURCE: rule/Surge/Apple/Apple_All.list
-# UPDATE: 2026-09-23 00:10:18
-# REMARK: 苹果设备、应用及云服务规则，使用“苹果服务”策略；保留来源的匹配方式与 DNS 解析选项。
+# UPDATE: 2026-09-25 20:22:07
+# REMARK: 苹果设备、应用及云服务规则，使用“苹果服务”策略。IP-CIDR 和 IP-CIDR6 均加 no-resolve，不主动触发 DNS 解析。
 DOMAIN,apple-events.akamaized.net
 DOMAIN,appleworldwidedeveloper.hb-api.omtrdc.net
 DOMAIN,appleworldwidedeveloper.sc.omtrdc.net
@@ -1568,19 +1568,19 @@ DOMAIN-KEYWORD,buy.itunes.apple.com
 DOMAIN-KEYWORD,smp-device
 DOMAIN-KEYWORD,testflight
 DOMAIN-KEYWORD,icloud.com.akadns.net
-IP-CIDR,139.178.128.0/18
-IP-CIDR,144.178.0.0/19
-IP-CIDR,144.178.36.0/22
-IP-CIDR,144.178.48.0/20
-IP-CIDR,17.0.0.0/8
-IP-CIDR,192.35.50.0/24
-IP-CIDR,198.183.17.0/24
-IP-CIDR,205.180.175.0/24
-IP-CIDR,63.92.224.0/19
-IP-CIDR,65.199.22.0/23
-IP-CIDR6,2403:300::/32
-IP-CIDR6,2620:149::/32
-IP-CIDR6,2a01:b740::/32
+IP-CIDR,139.178.128.0/18,no-resolve
+IP-CIDR,144.178.0.0/19,no-resolve
+IP-CIDR,144.178.36.0/22,no-resolve
+IP-CIDR,144.178.48.0/20,no-resolve
+IP-CIDR,17.0.0.0/8,no-resolve
+IP-CIDR,192.35.50.0/24,no-resolve
+IP-CIDR,198.183.17.0/24,no-resolve
+IP-CIDR,205.180.175.0/24,no-resolve
+IP-CIDR,63.92.224.0/19,no-resolve
+IP-CIDR,65.199.22.0/23,no-resolve
+IP-CIDR6,2403:300::/32,no-resolve
+IP-CIDR6,2620:149::/32,no-resolve
+IP-CIDR6,2a01:b740::/32,no-resolve
 USER-AGENT,*FindMyiPhone?
 USER-AGENT,*Music?
 USER-AGENT,*WeatherFoundation*

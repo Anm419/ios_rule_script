@@ -1,3 +1,5 @@
+- 完成全部模块的导入、合并和对比筛选后，为 `Anm/Surge/rule/` 下所有 IP 规则（含逻辑组合中的 IP 条件）补齐 `no-resolve`，避免主动触发 DNS 解析。
+
 ## Process
 
 - 将用户自定义的以下规则添加到 `Anm/Surge/rule/Process/Process.list`（仅 Surge Mac 支持，iOS 忽略；Loon 不支持进程匹配，无法等价转换，沿用其他规则分流）。
@@ -41,51 +43,6 @@ PROCESS-NAME,WebTorrent
 ## Tencent
 
 - 将 `rule/Surge/Tencent/Tencent_All.list` 内容复制到 `Anm/Surge/rule/Inner/Tencent/Tencent_All.list`。
-
-- 按用户要求，为 `Anm/Surge/rule/Inner/Tencent/Tencent_All.list` 中所有 IP 规则补充 `no-resolve`，避免主动触发 DNS 解析。
-
-```diff
--IP-CIDR,101.32.104.4/32
-+IP-CIDR,101.32.104.4/32,no-resolve
--IP-CIDR,101.32.104.41/32
-+IP-CIDR,101.32.104.41/32,no-resolve
--IP-CIDR,101.32.104.56/32
-+IP-CIDR,101.32.104.56/32,no-resolve
--IP-CIDR,101.32.118.25/32
-+IP-CIDR,101.32.118.25/32,no-resolve
--IP-CIDR,101.32.133.16/32
-+IP-CIDR,101.32.133.16/32,no-resolve
--IP-CIDR,101.32.133.209/32
-+IP-CIDR,101.32.133.209/32,no-resolve
--IP-CIDR,101.32.133.53/32
-+IP-CIDR,101.32.133.53/32,no-resolve
--IP-CIDR,103.238.16.0/23
-+IP-CIDR,103.238.16.0/23,no-resolve
--IP-CIDR,103.7.28.0/22
-+IP-CIDR,103.7.28.0/22,no-resolve
--IP-CIDR,119.147.8.78/32
-+IP-CIDR,119.147.8.78/32,no-resolve
--IP-CIDR,120.41.44.0/32
-+IP-CIDR,120.41.44.0/32,no-resolve
--IP-CIDR,122.5.0.129/32
-+IP-CIDR,122.5.0.129/32,no-resolve
--IP-CIDR,129.226.107.244/32
-+IP-CIDR,129.226.107.244/32,no-resolve
--IP-CIDR,129.226.3.47/32
-+IP-CIDR,129.226.3.47/32,no-resolve
--IP-CIDR,140.249.239.0/32
-+IP-CIDR,140.249.239.0/32,no-resolve
--IP-CIDR,140.249.28.0/32
-+IP-CIDR,140.249.28.0/32,no-resolve
--IP-CIDR,150.138.137.0/32
-+IP-CIDR,150.138.137.0/32,no-resolve
--IP-CIDR,150.139.143.0/32
-+IP-CIDR,150.139.143.0/32,no-resolve
--IP-CIDR,27.159.95.0/32
-+IP-CIDR,27.159.95.0/32,no-resolve
--IP-CIDR,58.58.81.129/32
-+IP-CIDR,58.58.81.129/32,no-resolve
-```
 
 ## Apple
 
