@@ -28,6 +28,51 @@ DOMAIN-SUFFIX,synergypeak.org,DIRECT
 - 将 `rule/Loon/Tencent/Tencent_Domain.list` 按“以 `.` 开头的域名去掉首个点并添加 `DOMAIN-SUFFIX,`，其余域名添加 `DOMAIN,`”转换后写入 `Anm/Loon/rule/Inner/Tencent/Tencent_All.list`。
 - 将 `rule/Loon/Tencent/Tencent_Resolve.list` 内容合并到 `Anm/Loon/rule/Inner/Tencent/Tencent_All.list`。
 
+- 按用户要求，为 `Anm/Loon/rule/Inner/Tencent/Tencent_All.list` 中所有 IP 规则补充 `no-resolve`，避免主动触发 DNS 解析。
+
+```diff
+-IP-CIDR,101.32.104.4/32
++IP-CIDR,101.32.104.4/32,no-resolve
+-IP-CIDR,101.32.104.41/32
++IP-CIDR,101.32.104.41/32,no-resolve
+-IP-CIDR,101.32.104.56/32
++IP-CIDR,101.32.104.56/32,no-resolve
+-IP-CIDR,101.32.118.25/32
++IP-CIDR,101.32.118.25/32,no-resolve
+-IP-CIDR,101.32.133.16/32
++IP-CIDR,101.32.133.16/32,no-resolve
+-IP-CIDR,101.32.133.209/32
++IP-CIDR,101.32.133.209/32,no-resolve
+-IP-CIDR,101.32.133.53/32
++IP-CIDR,101.32.133.53/32,no-resolve
+-IP-CIDR,103.238.16.0/23
++IP-CIDR,103.238.16.0/23,no-resolve
+-IP-CIDR,103.7.28.0/22
++IP-CIDR,103.7.28.0/22,no-resolve
+-IP-CIDR,119.147.8.78/32
++IP-CIDR,119.147.8.78/32,no-resolve
+-IP-CIDR,120.41.44.0/32
++IP-CIDR,120.41.44.0/32,no-resolve
+-IP-CIDR,122.5.0.129/32
++IP-CIDR,122.5.0.129/32,no-resolve
+-IP-CIDR,129.226.107.244/32
++IP-CIDR,129.226.107.244/32,no-resolve
+-IP-CIDR,129.226.3.47/32
++IP-CIDR,129.226.3.47/32,no-resolve
+-IP-CIDR,140.249.239.0/32
++IP-CIDR,140.249.239.0/32,no-resolve
+-IP-CIDR,140.249.28.0/32
++IP-CIDR,140.249.28.0/32,no-resolve
+-IP-CIDR,150.138.137.0/32
++IP-CIDR,150.138.137.0/32,no-resolve
+-IP-CIDR,150.139.143.0/32
++IP-CIDR,150.139.143.0/32,no-resolve
+-IP-CIDR,27.159.95.0/32
++IP-CIDR,27.159.95.0/32,no-resolve
+-IP-CIDR,58.58.81.129/32
++IP-CIDR,58.58.81.129/32,no-resolve
+```
+
 ## Apple
 
 - 将 `rule/Loon/Apple/Apple_Domain.list` 转换后写入 `Anm/Loon/rule/Out/Apple/Apple_All.list`（以 `.` 开头的域名去掉首个点并添加 `DOMAIN-SUFFIX,`，其余域名添加 `DOMAIN,`；较 Surge 缺少 13 条进程名规则，无法等价转换，按其他规则继续分流）。
