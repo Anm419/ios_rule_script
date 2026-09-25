@@ -1,4 +1,9 @@
 # SOURCE: Anm/Surge/README.md#extra_out
+# UPDATE: 2026-09-25 18:11:54
+# REMARK: 用户自定义 api-flowercloud.com 域名及子域名规则，使用“节点选择”策略。
+DOMAIN-SUFFIX,api-flowercloud.com
+
+# SOURCE: Anm/Surge/README.md#extra_out
 # UPDATE: 2026-09-25 17:56:59
 # REMARK: 用户自定义 Context7、JetBrains、npm 和 zeroturnaround.com 域名及子域名规则，使用“节点选择”策略。
 DOMAIN-SUFFIX,context7.com

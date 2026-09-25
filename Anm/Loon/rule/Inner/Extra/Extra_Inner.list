@@ -1,4 +1,16 @@
 # SOURCE: Anm/Loon/README.md#extra_inner
+# UPDATE: 2026-09-25 18:11:54
+# REMARK: 用户自定义内网 DNS 域名及其子域名规则，用于直连分流。
+DOMAIN-SUFFIX,aiguoai.com
+DOMAIN-SUFFIX,aiguoerp.com
+DOMAIN-SUFFIX,xtkj99.com
+
+# SOURCE: Anm/Loon/README.md#extra_inner
+# UPDATE: 2026-09-25 18:11:54
+# REMARK: 用户自定义奶昔订阅域名规则，用于直连下载。
+DOMAIN-SUFFIX,synergypeak.org,DIRECT
+
+# SOURCE: Anm/Loon/README.md#extra_inner
 # UPDATE: 2026-09-25 17:00:34
 # REMARK: 用户自定义 speedtest.cn 域名及子域名规则，用于直连分流。
 DOMAIN-SUFFIX,speedtest.cn

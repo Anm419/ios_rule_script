@@ -2,17 +2,6 @@
 
 - 将 `https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/reject.txt` 内容复制到 `Anm/Loon/rule/Advertising/reject.list`。
 
-## Custom_Inner
-
-- 将用户自定义的以下规则添加到 `Anm/Loon/rule/Inner/Custom/Custom_Inner.list`。
-
-```text
-DOMAIN-SUFFIX,aiguoai.com
-DOMAIN-SUFFIX,aiguoerp.com
-DOMAIN-SUFFIX,xtkj99.com
-DOMAIN-SUFFIX,synergypeak.org,DIRECT
-```
-
 ## Lan
 
 - 将 `rule/Loon/Lan/Lan.list` 内容复制到 `Anm/Loon/rule/Inner/Lan/Lan.list`。
@@ -150,19 +139,12 @@ IP-CIDR,108.160.166.62/32,no-resolve
 
 - 将 `rule/Loon/GitHub/GitHub.list` 内容复制到 `Anm/Loon/rule/Out/Synthesis/Synthesis_Out.list`。
 
-## Custom_Out
-
-- 将用户自定义的以下规则添加到 `Anm/Loon/rule/Out/Custom/Custom_Out.list`。
-
-```text
-DOMAIN-SUFFIX,api-flowercloud.com
-```
-
 ## Extra_Out
 
 - 将用户自定义的以下规则添加到 `Anm/Loon/rule/Out/Extra/Extra_Out.list`。
 
 ```text
+DOMAIN-SUFFIX,api-flowercloud.com
 DOMAIN-SUFFIX,context7.com
 DOMAIN-SUFFIX,jetbrains.com
 DOMAIN-SUFFIX,npmjs.org
@@ -182,6 +164,10 @@ DOMAIN-SUFFIX,ping0.cc
 - 将用户自定义的以下规则添加到 `Anm/Loon/rule/Inner/Extra/Extra_Inner.list`。
 
 ```text
+DOMAIN-SUFFIX,aiguoai.com
+DOMAIN-SUFFIX,aiguoerp.com
+DOMAIN-SUFFIX,xtkj99.com
+DOMAIN-SUFFIX,synergypeak.org,DIRECT
 DOMAIN-SUFFIX,speedtest.cn
 ```
 
