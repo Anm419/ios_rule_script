@@ -14,3 +14,8 @@ DOMAIN-SUFFIX,synergypeak.org,DIRECT
 # UPDATE: 2026-09-25 17:00:34
 # REMARK: 用户自定义 speedtest.cn 域名及子域名规则，用于直连分流。
 DOMAIN-SUFFIX,speedtest.cn
+
+# SOURCE: Anm/Surge/README.md#extra_inner
+# UPDATE: 2026-09-25 19:37:01
+# REMARK: 用户自定义 api-flowercloud.com 域名及子域名规则，用于直连分流。
+DOMAIN-SUFFIX,api-flowercloud.com

@@ -166,7 +166,6 @@ IP-CIDR,108.160.166.62/32,no-resolve
 - 将用户自定义的以下规则添加到 `Anm/Surge/rule/Out/Extra/Extra_Out.list`。
 
 ```text
-DOMAIN-SUFFIX,api-flowercloud.com
 DOMAIN-SUFFIX,context7.com
 DOMAIN-SUFFIX,jetbrains.com
 DOMAIN-SUFFIX,npmjs.org
@@ -191,6 +190,7 @@ DOMAIN-SUFFIX,aiguoerp.com
 DOMAIN-SUFFIX,xtkj99.com
 DOMAIN-SUFFIX,synergypeak.org,DIRECT
 DOMAIN-SUFFIX,speedtest.cn
+DOMAIN-SUFFIX,api-flowercloud.com
 ```
 
 ## Synthesis_Inner
