@@ -1,7 +1,7 @@
 # SOURCE: Anm/Surge/README.md#process
 # UPDATE: 2026-09-25 18:26:08
 # REMARK: 用户自定义代理、VPN 和下载工具进程规则，用于直连分流；仅 Surge Mac 支持，iOS 忽略。
-PROCESS-NAME,"/Applications/OpenVPN Connect/OpenVPN Connect.app/"
+PROCESS-NAME,OpenVPN Connect
 PROCESS-NAME,v2ray
 PROCESS-NAME,xray
 PROCESS-NAME,clash
