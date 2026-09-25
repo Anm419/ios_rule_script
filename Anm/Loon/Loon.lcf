@@ -24,13 +24,16 @@ sni-sniffing = true
 switch-node-after-failure-times = 3
 
 [Host]
-# 内网域名DNS交给系统
-aiguoai.com = server:system
-*.aiguoai.com = server:system
-aiguoerp.com = server:system
-*.aiguoerp.com = server:system
-xtkj99.com = server:system
-*.xtkj99.com = server:system
+# VPN 入口使用系统 DNS，确保连接前能够解析
+ik-vpn.aiguoai.com = server:system
+
+# 内网域名DNS
+aiguoai.com = server:192.168.20.1
+*.aiguoai.com = server:192.168.20.1
+aiguoerp.com = server:192.168.20.1
+*.aiguoerp.com = server:192.168.20.1
+xtkj99.com = server:192.168.20.1
+*.xtkj99.com = server:192.168.20.1
 
 ip6-localhost = ::1
 ip6-loopback = ::1
