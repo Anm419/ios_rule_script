@@ -1,5 +1,5 @@
 # SOURCE: rule/Loon/Global/Global_Domain.list
-# UPDATE: 2026-09-23 19:54:31
+# UPDATE: 2026-09-27 22:00:11
 # REMARK: 国外网站及相关服务域名规则，使用“节点选择”策略；域名表中以点开头的条目转换为 DOMAIN-SUFFIX，其余转换为 DOMAIN。
 DOMAIN-SUFFIX,000webhost.com
 DOMAIN-SUFFIX,01.org
@@ -6746,6 +6746,7 @@ DOMAIN-SUFFIX,chinesegay.org
 DOMAIN-SUFFIX,chinesen.de
 DOMAIN-SUFFIX,chinesenews.net.au
 DOMAIN-SUFFIX,chinesepen.org
+DOMAIN-SUFFIX,chineseposters.net
 DOMAIN-SUFFIX,chineseradioseattle.com
 DOMAIN-SUFFIX,chinesespanking.com
 DOMAIN-SUFFIX,chinesetalks.net
@@ -18169,7 +18170,6 @@ DOMAIN-SUFFIX,like.com
 DOMAIN-SUFFIX,likee.com
 DOMAIN-SUFFIX,likeeapp.ru
 DOMAIN-SUFFIX,likeevideo.com
-DOMAIN-SUFFIX,likeevideo.ru
 DOMAIN-SUFFIX,likeseiyu.com
 DOMAIN-SUFFIX,liketruyen.net
 DOMAIN-SUFFIX,liketwice.com
@@ -22059,6 +22059,7 @@ DOMAIN-SUFFIX,northumbria.ac.uk
 DOMAIN-SUFFIX,norton.com
 DOMAIN-SUFFIX,norwichresearchpark.ac.uk
 DOMAIN-SUFFIX,nos.nl
+DOMAIN-SUFFIX,note.com
 DOMAIN-SUFFIX,notegpt.io
 DOMAIN-SUFFIX,notepad-plus-plus.org
 DOMAIN-SUFFIX,noticias-rt.com
@@ -35282,7 +35283,7 @@ DOMAIN,hulu.com.c.footprint.net
 DOMAIN,rpg.pic-imges.com
 
 # SOURCE: rule/Loon/GlobalMedia/GlobalMedia_Resolve.list
-# UPDATE: 2026-09-25 20:22:07
+# UPDATE: 2026-09-27 22:00:11
 # REMARK: Global 未覆盖的国外影音关键词、User-Agent 及 IP 补充规则，使用“节点选择”策略；较 Surge 缺少 3 条 Viu 进程规则，无法等价转换。IP-CIDR 和 IP-CIDR6 均加 no-resolve，不主动触发 DNS 解析。
 DOMAIN-KEYWORD,anthropic
 DOMAIN-KEYWORD,apiproxy-device-prod-nlb-
@@ -35329,9 +35330,9 @@ USER-AGENT,app/bstar*
 USER-AGENT,com.apple.tv*
 USER-AGENT,com.kktv*
 USER-AGENT,discovery+*
-USER-AGENT,*youtube*
 USER-AGENT,*YouTubeMusic*
 USER-AGENT,*com.google.ios.youtubemusic*
+USER-AGENT,*youtube*
 IP-CIDR,1.37.35.6/32,no-resolve
 IP-CIDR,101.100.179.242/32,no-resolve
 IP-CIDR,101.100.179.250/32,no-resolve

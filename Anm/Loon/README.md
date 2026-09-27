@@ -1,3 +1,5 @@
+## IP 规则
+
 - 完成全部模块的导入、合并和对比筛选后，为 `Anm/Loon/rule/` 下所有 IP 规则（含逻辑组合中的 IP 条件）补齐 `no-resolve`，避免主动触发 DNS 解析。
 
 ## Advertising
@@ -123,6 +125,7 @@ DOMAIN-SUFFIX,ping0.cc
 DOMAIN-SUFFIX,aiguoai.com
 DOMAIN-SUFFIX,aiguoerp.com
 DOMAIN-SUFFIX,xtkj99.com
+DOMAIN-SUFFIX,codem.cc
 DOMAIN-SUFFIX,synergypeak.org,DIRECT
 DOMAIN-SUFFIX,speedtest.cn
 DOMAIN-SUFFIX,api-flowercloud.com

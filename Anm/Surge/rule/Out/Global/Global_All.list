@@ -1,5 +1,5 @@
 # SOURCE: rule/Surge/Global/Global_All.list
-# UPDATE: 2026-09-25 20:22:07
+# UPDATE: 2026-09-27 22:00:11
 # REMARK: 国外网站及相关服务综合规则，使用“节点选择”策略；进程规则仅 Surge Mac 支持。IP-CIDR 和 IP-CIDR6 均加 no-resolve，不主动触发 DNS 解析。
 DOMAIN,1password.drift.click
 DOMAIN,adobeereg.com
@@ -15007,7 +15007,6 @@ DOMAIN-SUFFIX,like-video.com
 DOMAIN-SUFFIX,likee.com
 DOMAIN-SUFFIX,likeeapp.ru
 DOMAIN-SUFFIX,likeevideo.com
-DOMAIN-SUFFIX,likeevideo.ru
 DOMAIN-SUFFIX,likeseiyu.com
 DOMAIN-SUFFIX,liketruyen.net
 DOMAIN-SUFFIX,liketwice.com
@@ -29251,6 +29250,7 @@ DOMAIN-SUFFIX,chinesegay.org
 DOMAIN-SUFFIX,chinesen.de
 DOMAIN-SUFFIX,chinesenews.net.au
 DOMAIN-SUFFIX,chinesepen.org
+DOMAIN-SUFFIX,chineseposters.net
 DOMAIN-SUFFIX,chineseradioseattle.com
 DOMAIN-SUFFIX,chinesetalks.net
 DOMAIN-SUFFIX,chineseupress.com
@@ -32171,6 +32171,7 @@ DOMAIN-SUFFIX,nordstrommedia.com
 DOMAIN-SUFFIX,nordstromrack.com
 DOMAIN-SUFFIX,nordvpn.com
 DOMAIN-SUFFIX,nos.nl
+DOMAIN-SUFFIX,note.com
 DOMAIN-SUFFIX,notepad-plus-plus.org
 DOMAIN-SUFFIX,notion.so
 DOMAIN-SUFFIX,nottinghampost.com
@@ -35102,7 +35103,7 @@ USER-AGENT,hearthstone*
 PROCESS-NAME,LookupViewService
 
 # SOURCE: rule/Surge/GlobalMedia/GlobalMedia_All.list
-# UPDATE: 2026-09-25 20:22:07
+# UPDATE: 2026-09-27 22:00:11
 # REMARK: Global 未覆盖的国外影音及相关服务补充规则，使用“节点选择”策略；进程规则仅 Surge Mac 支持。IP-CIDR 和 IP-CIDR6 均加 no-resolve，不主动触发 DNS 解析。
 DOMAIN,akmcdnoversea-tw.inter.ptqy.gitv.tv
 DOMAIN,api.okzy.tv
@@ -36231,9 +36232,9 @@ USER-AGENT,app/bstar*
 USER-AGENT,com.apple.tv*
 USER-AGENT,com.kktv*
 USER-AGENT,discovery+*
-USER-AGENT,*youtube*
 USER-AGENT,*YouTubeMusic*
 USER-AGENT,*com.google.ios.youtubemusic*
+USER-AGENT,*youtube*
 PROCESS-NAME,com.viu.pad
 PROCESS-NAME,com.viu.phone
 PROCESS-NAME,com.vuclip.viu
