@@ -1,7 +1,7 @@
 # NAME: Apple
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2026-09-22 05:31:11
+# UPDATED: 2026-09-26 04:57:30
 # DOMAIN: 9
 # DOMAIN-KEYWORD: 7
 # DOMAIN-SUFFIX: 1551
@@ -1201,6 +1201,7 @@ p-events-delivery.akamaized.net
 +.applepaysupplies.tv
 +.applewallet.com
 +.applewallet.tv
++.appsto.re
 +.appstore.co.id
 +.appstore.com
 +.appstore.hk
@@ -1523,6 +1524,7 @@ p-events-delivery.akamaized.net
 +.wwwipodlounge.com
 +.wwwmacbookair.com
 +.apple.comscoreresearch.com
++.apple.news
 +.appleenews.com
 +.applemusic.berlin
 +.applemusic.co
@@ -1560,12 +1562,10 @@ p-events-delivery.akamaized.net
 +.wwwapplemusic.com
 +.applemusic.com
 +.apple-dns.net
-+.apple.news
-+.appsto.re
-+.cdn-apple.com
 +.digicert.com
 +.apple-cloudkit.com
 +.apple-livephotoskit.com
 +.apzones.com
++.cdn-apple.com
 +.icloud-content.com.cn
 +.icloud.cn
