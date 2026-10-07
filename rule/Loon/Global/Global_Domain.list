@@ -1,14 +1,14 @@
 # NAME: Global
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2026-10-02 06:15:52
+# UPDATED: 2026-10-06 07:36:42
 # DOMAIN: 128
 # DOMAIN-KEYWORD: 36
-# DOMAIN-SUFFIX: 34780
+# DOMAIN-SUFFIX: 34784
 # IP-CIDR: 115
 # IP-CIDR6: 4
 # USER-AGENT: 46
-# TOTAL: 35109
+# TOTAL: 35113
 .000webhost.com
 .01.org
 .02weqj32.com
@@ -7000,6 +7000,7 @@
 .clau.de
 .claude.ai
 .claude.com
+.claude.dev
 .claudemcpclient.com
 .claudemcpcontent.com
 .claudeusercontent.com
@@ -13386,6 +13387,7 @@
 .googlepagecreator.com
 .googlephotos.com
 .googleplay.com
+.googleplaycensorship.com
 .googleplex.com
 .googleplus.com
 .googlescholar.com
@@ -32699,6 +32701,7 @@
 .wikidata.org
 .wikidot.com
 .wikifeet.com
+.wikifunctions.org
 .wikihow.com
 .wikileaks-forum.com
 .wikileaks.ch
@@ -32722,6 +32725,7 @@
 .wikis.tw
 .wikisexguide.com
 .wikisource.org
+.wikispecies.org
 .wikiunblocked.org
 .wikiversity.org
 .wikivoyage.org
