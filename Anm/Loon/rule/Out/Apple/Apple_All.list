@@ -1563,7 +1563,7 @@ DOMAIN,lookup-api.apple.com.edgekey.net
 DOMAIN,p-events-delivery.akamaized.net
 
 # SOURCE: rule/Loon/Apple/Apple_Resolve.list
-# UPDATE: 2026-09-30 22:24:53
+# UPDATE: 2026-10-03 12:08:31
 # REMARK: 苹果设备、应用及云服务规则，使用“苹果服务”策略；与域名组仅按完整规则去重。软件差异：较 Surge 缺少 13 条进程名规则，无法等价转换，按其他规则继续分流。IP-CIDR 和 IP-CIDR6 均加 no-resolve，不主动触发 DNS 解析。
 DOMAIN-KEYWORD,apple-support.akadns.net
 DOMAIN-KEYWORD,apple.com.akadns.net
@@ -1591,9 +1591,9 @@ USER-AGENT,locationd*
 USER-AGENT,passd*
 USER-AGENT,Music*
 USER-AGENT,AppleNews*
+USER-AGENT,AppleTV*
 USER-AGENT,com.apple.news*
 USER-AGENT,com.apple.trustd*
-USER-AGENT,AppleTV*
 USER-AGENT,com.apple.tv*
 IP-CIDR,139.178.128.0/18,no-resolve
 IP-CIDR,144.178.0.0/19,no-resolve
