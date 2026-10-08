@@ -107,6 +107,9 @@ DOMAIN-SUFFIX,context7.com
 DOMAIN-SUFFIX,jetbrains.com
 DOMAIN-SUFFIX,npmjs.org
 DOMAIN-SUFFIX,zeroturnaround.com
+DOMAIN-SUFFIX,cctq.qi
+DOMAIN-SUFFIX,ai-zjl.cc
+DOMAIN-SUFFIX,pi-dev
 ```
 
 ## USA
@@ -126,9 +129,6 @@ DOMAIN-SUFFIX,aiguoai.com
 DOMAIN-SUFFIX,aiguoerp.com
 DOMAIN-SUFFIX,xtkj99.com
 DOMAIN-SUFFIX,codem.cc
-DOMAIN-SUFFIX,cctq.qi
-DOMAIN-SUFFIX,ai-zjl.cc
-DOMAIN-SUFFIX,pi-dev
 DOMAIN-SUFFIX,synergypeak.org,DIRECT
 DOMAIN-SUFFIX,speedtest.cn
 DOMAIN-SUFFIX,api-flowercloud.com
