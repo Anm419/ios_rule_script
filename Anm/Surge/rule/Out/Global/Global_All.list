@@ -1,5 +1,5 @@
 # SOURCE: rule/Surge/Global/Global_All.list
-# UPDATE: 2026-10-12 09:57:56
+# UPDATE: 2026-10-16 16:52:35
 # REMARK: 国外网站及相关服务综合规则，使用“节点选择”策略；进程规则仅 Surge Mac 支持。IP-CIDR 和 IP-CIDR6 均加 no-resolve，不主动触发 DNS 解析。
 DOMAIN,1password.drift.click
 DOMAIN,adobeereg.com
@@ -635,6 +635,7 @@ DOMAIN-SUFFIX,91se.fun
 DOMAIN-SUFFIX,91sesex.xyz
 DOMAIN-SUFFIX,91sew.xyz
 DOMAIN-SUFFIX,91sew40.buzz
+DOMAIN-SUFFIX,91short.com
 DOMAIN-SUFFIX,91vhome.com
 DOMAIN-SUFFIX,920share.com
 DOMAIN-SUFFIX,921bb.com

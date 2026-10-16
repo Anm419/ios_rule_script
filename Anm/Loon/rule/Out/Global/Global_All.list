@@ -1,5 +1,5 @@
 # SOURCE: rule/Loon/Global/Global_Domain.list
-# UPDATE: 2026-10-12 09:57:56
+# UPDATE: 2026-10-16 16:52:35
 # REMARK: 国外网站及相关服务域名规则，使用“节点选择”策略；域名表中以点开头的条目转换为 DOMAIN-SUFFIX，其余转换为 DOMAIN。
 DOMAIN-SUFFIX,000webhost.com
 DOMAIN-SUFFIX,01.org
@@ -650,6 +650,7 @@ DOMAIN-SUFFIX,91se.fun
 DOMAIN-SUFFIX,91sesex.xyz
 DOMAIN-SUFFIX,91sew.xyz
 DOMAIN-SUFFIX,91sew40.buzz
+DOMAIN-SUFFIX,91short.com
 DOMAIN-SUFFIX,91vhome.com
 DOMAIN-SUFFIX,91vps.club
 DOMAIN-SUFFIX,920share.com
