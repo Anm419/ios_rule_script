@@ -1,5 +1,5 @@
 # SOURCE: rule/Surge/Apple/Apple_All.list
-# UPDATE: 2026-10-16 16:52:35
+# UPDATE: 2026-10-18 16:47:12
 # REMARK: 苹果设备、应用及云服务规则，使用“苹果服务”策略。IP-CIDR 和 IP-CIDR6 均加 no-resolve，不主动触发 DNS 解析。
 DOMAIN,apple-events.akamaized.net
 DOMAIN,appleworldwidedeveloper.hb-api.omtrdc.net
@@ -1190,6 +1190,7 @@ DOMAIN-SUFFIX,applepaysupplies.net
 DOMAIN-SUFFIX,applepaysupplies.tv
 DOMAIN-SUFFIX,applewallet.com
 DOMAIN-SUFFIX,applewallet.tv
+DOMAIN-SUFFIX,appsto.re
 DOMAIN-SUFFIX,appstore.co.id
 DOMAIN-SUFFIX,appstore.com
 DOMAIN-SUFFIX,appstore.hk
@@ -1469,6 +1470,7 @@ DOMAIN-SUFFIX,apple.news
 DOMAIN-SUFFIX,appleenews.com
 DOMAIN-SUFFIX,applemusic.berlin
 DOMAIN-SUFFIX,applemusic.co
+DOMAIN-SUFFIX,applemusic.com
 DOMAIN-SUFFIX,applemusic.com.au
 DOMAIN-SUFFIX,applemusic.hamburg
 DOMAIN-SUFFIX,applemusic.wang
@@ -1501,9 +1503,7 @@ DOMAIN-SUFFIX,iphoto.se
 DOMAIN-SUFFIX,iphoto.wang
 DOMAIN-SUFFIX,musickit.net
 DOMAIN-SUFFIX,wwwapplemusic.com
-DOMAIN-SUFFIX,applemusic.com
 DOMAIN-SUFFIX,apple-dns.net
-DOMAIN-SUFFIX,appsto.re
 DOMAIN-SUFFIX,digicert.com
 DOMAIN-SUFFIX,apple-cloudkit.com
 DOMAIN-SUFFIX,apple-icloud.cn
